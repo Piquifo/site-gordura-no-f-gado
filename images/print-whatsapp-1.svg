@@ -1,0 +1,77 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 590" width="100%" height="100%" style="background:#ECE5DD;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Avatar 1 -->
+    <linearGradient id="av1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4E9F76"/>
+      <stop offset="100%" stop-color="#1E5E3A"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Top Bar WhatsApp -->
+  <rect x="0" y="0" width="420" height="74" fill="#075E54"/>
+  
+  <!-- Back arrow -->
+  <path d="M16 38 L26 28 M16 38 L26 48 M16 38 L34 38" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Profile Photo -->
+  <circle cx="56" cy="38" r="20" fill="url(#av1)"/>
+  <text x="56" y="44" fill="#FFFFFF" font-size="16" font-weight="700" text-anchor="middle">CR</text>
+  
+  <!-- Contact Name & Status -->
+  <text x="88" y="34" fill="#FFFFFF" font-size="16" font-weight="600">Cláudia Rocha (Aluna)</text>
+  <text x="88" y="50" fill="#A7F3D0" font-size="12">online</text>
+  
+  <!-- Action Icons -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Video call -->
+    <rect x="300" y="28" width="18" height="14" rx="3"/>
+    <path d="M318 33 L326 29 L326 41 Z"/>
+    <!-- Phone -->
+    <path d="M346 31 C346 37 351 42 357 42 C359 42 360 41 361 40 L359 36 L356 37 C354 35 353 34 351 32 L352 29 L348 27 C347 28 346 29 346 31 Z"/>
+    <!-- 3 dots -->
+    <circle cx="388" cy="31" r="1.5" fill="#FFFFFF"/>
+    <circle cx="388" cy="38" r="1.5" fill="#FFFFFF"/>
+    <circle cx="388" cy="45" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Date Chip -->
+  <rect x="175" y="90" width="70" height="24" rx="12" fill="#E1F3FB" filter="url(#shadow)"/>
+  <text x="210" y="106" fill="#54656F" font-size="11" font-weight="600" text-anchor="middle">Hoje</text>
+
+  <!-- Message 1 (Incoming) -->
+  <path d="M22 135 L28 128 L34 135 Z" fill="#FFFFFF"/>
+  <rect x="25" y="128" width="310" height="66" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="38" y="150" fill="#111B21" font-size="13.5">Boa tarde! Preciso muito te contar</text>
+  <text x="38" y="170" fill="#111B21" font-size="13.5">uma coisa... Acabei de sair do médico! 🥹</text>
+  <text x="300" y="186" fill="#667781" font-size="10.5">14:22</text>
+
+  <!-- Message 2 (Incoming - Big Result) -->
+  <rect x="25" y="204" width="350" height="135" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="38" y="226" fill="#111B21" font-size="13.5">Fiz o ultrassom de controle da esteatose.</text>
+  <text x="38" y="246" fill="#0D6E44" font-size="13.5" font-weight="700">Minha gordura caiu de GRAU 2 pra leve</text>
+  <text x="38" y="266" fill="#111B21" font-size="13.5">quase normal em só 40 dias de manual!</text>
+  <text x="38" y="290" fill="#111B21" font-size="13.5">O médico perguntou chocado o que eu fiz.</text>
+  <text x="38" y="312" fill="#111B21" font-size="13.5">Minha barriga desinchou 6cm e não sinto</text>
+  <text x="38" y="330" fill="#111B21" font-size="13.5">mais peso nenhum após o almoço 🙏</text>
+  <text x="338" y="333" fill="#667781" font-size="10.5">14:23</text>
+
+  <!-- Message 3 (Outgoing - Green) -->
+  <rect x="110" y="352" width="285" height="74" rx="10" fill="#D9FDD3" filter="url(#shadow)"/>
+  <text x="122" y="374" fill="#111B21" font-size="13.5">Que notícia maravilhosa, Cláudia!! 🎉</text>
+  <text x="122" y="394" fill="#111B21" font-size="13.5">O fígado tem um poder de regeneração</text>
+  <text x="122" y="414" fill="#111B21" font-size="13.5">incrível com os alimentos certos!</text>
+  <!-- Checks -->
+  <text x="352" y="420" fill="#667781" font-size="10.5">14:25</text>
+  <path d="M375 414 L378 418 L386 409 M379 414 L382 418 L390 409" stroke="#53BDEB" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Message 4 (Incoming) -->
+  <rect x="25" y="438" width="335" height="92" rx="10" fill="#FFFFFF" filter="url(#shadow)"/>
+  <text x="38" y="460" fill="#111B21" font-size="13.5">As bebidas matinais viraram meu vício</text>
+  <text x="38" y="480" fill="#111B21" font-size="13.5">e a janta leve me faz acordar com muita</text>
+  <text x="38" y="500" fill="#111B21" font-size="13.5">energia. Valeu cada centavo dos R$47,90!</text>
+  <text x="38" y="520" fill="#111B21" font-size="13.5">Deus abençoe vocês ❤️❤️</text>
+  <text x="325" y="524" fill="#667781" font-size="10.5">14:27</text>
+</svg>

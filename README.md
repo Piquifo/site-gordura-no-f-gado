@@ -1,41 +1,40 @@
-# 🌿 Manual do Fígado Magro - Página de Vendas Oficial de Alta Conversão
+# 🌿 Manual do Fígado Magro — Página de Vendas de Alta Conversão
 
-Página de vendas profissional desenvolvida para o infoproduto **Manual do Fígado Magro**, um ecossistema completo para reduzir a gordura no fígado (esteatose hepática) através de alimentação estratégica, exercícios fáceis para fazer em casa e bebidas funcionais.
-
----
-
-## 📚 Os 5 Produtos Inclusos no Combo
-
-1. **Guia Mestre Central:** `Manual do Fígado Magro` (engloba todos os materiais e princípios práticos da saúde hepática)
-2. **1º Café da Manhã Anti-Gordura:** Receitas rápidas de 5 a 10 min que ativam a queima hepática sem picos de glicose (`images/cafe-da-manha.jpg`).
-3. **2º Almoço Desintoxicante:** Pratos nutritivos e leves que eliminam a sonolência e o estufamento pós-refeição (`images/almoco.jpg`).
-4. **3º Janta Leve & Reparadora:** Sopas e pratos que estimulam a regeneração celular durante a noite (`images/janta.jpg`).
-5. **4º Exercícios para Fazer em Casa:** Sequências de 10 a 15 minutos de baixo impacto para queima de gordura visceral (`images/exercicios.jpg`).
-6. **5º Bebidas para Derreter a Gordura no Fígado:** Sucos, chás termogênicos, águas infusionadas e shots matinais (`images/bebidas.jpg`).
+Página de vendas profissional desenvolvida para o infoproduto **Manual do Fígado Magro**, remodelada com o design system editorial de alto padrão de `https://esposa-desejada.vercel.app`.
 
 ---
 
-## 📁 Estrutura de Arquivos
+## 🎨 Identidade Visual & Design System
 
-* **`index.html`**: Página principal completa, semântica e pronta para tráfego (Meta Ads / Google Ads / TikTok Ads).
-* **`style.css`**: Design visual de alto padrão no estilo *Dark Health Luxury* com destaques em verde floresta, esmeralda e dourado nobre.
-* **`script.js`**: Contador regressivo (15:00), slider interativo de antes e depois, acordeão de dúvidas (FAQ), barra flutuante mobile (*sticky bar*) e notificações de compras ao vivo.
-* **`images/`**: Pasta com as capas oficiais em alta resolução:
-  - `capa-mestre.jpg` (Capa principal sem faixa inferior)
-  - `cafe-da-manha.jpg`
-  - `almoco.jpg`
-  - `janta.jpg`
-  - `exercicios.jpg`
-  - `bebidas.jpg`
-* **`site-completo-figado.html`**: Versão autônoma em arquivo único (HTML + CSS + JS unificados). Dê dois cliques para abrir no navegador ou use em blocos HTML do Elementor/WordPress.
+* **Tipografia:** `Playfair Display` (serifa editorial para títulos de impacto e ênfases em itálico) + `Inter` (sans-serif para máxima legibilidade no celular).
+* **Paleta de Cores:**
+  * **Seções Escuras:** Deep Forest (`#0C1812`) com cards em `#13251D` e bordas `#233F31`.
+  * **Seções Claras:** Wellness Cream (`#F6F9F7` / `#FFFFFF`) com cards brancos, bordas suaves `#DCE7E1` e sombras elegantes.
+  * **Destaques e Botões:** Verde nobre (`#0D6E44` / `#10B981`) com detalhes em dourado ouro (`#D4AF37`).
+* **Estrutura dos 5 Produtos:**
+  * Capa Mestre: `images/capa-mestre.jpg`
+  * 1º Café da Manhã Anti-Gordura: `images/cafe-da-manha.jpg`
+  * 2º Almoço Desintoxicante: `images/almoco.jpg`
+  * 3º Janta Leve & Reparadora: `images/janta.jpg`
+  * 4º Exercícios para Fazer em Casa: `images/exercicios.jpg`
+  * 5º Bebidas para Derreter a Gordura no Fígado: `images/bebidas.jpg`
 
 ---
 
-## ⚙️ Como Conectar seu Checkout
+## ⚡ Como Configurar Seu Checkout
 
-1. Abra o arquivo `index.html` (e `site-completo-figado.html`);
-2. Procure pelo link:
-   ```html
-   <a href="https://pay.hotmart.com/" target="_blank" rel="noopener" class="btn-cta">
-   ```
-3. Troque `https://pay.hotmart.com/` pelo seu link do checkout (Hotmart, Kiwify, Braip, Eduzz, etc.).
+No arquivo **`script.js`**, na linha 6, você pode simplesmente colar o link do seu checkout:
+```javascript
+const CHECKOUT_URL = 'https://pay.hotmart.com/SEU_CODIGO';
+```
+Automaticamente, todos os botões de compra apontarão para a sua página de pagamento do Hotmart, Kiwify, Braip ou Eduzz.
+
+---
+
+## 📁 Arquivos Incluídos
+
+* **`index.html`**: Estrutura modular semântica com o fluxo exato de seções da referência.
+* **`style.css`**: Estilização idêntica ao site de referência (seções alternadas, cards com cantos arredondados de 20px–24px, tipografia responsiva e botões com sombra).
+* **`script.js`**: Accordion FAQ com rotação de 45° no ícone circular, slider antes & depois touch-friendly e controle da barra fixa mobile.
+* **`site-completo-figado.html`**: Versão compilada em arquivo único (HTML + CSS + JS embutidos), ideal para abrir direto no navegador ou colar no Elementor/WordPress.
+* **`images/`**: Todas as 6 capas originais em alta resolução.

@@ -1,489 +1,625 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Manual do Fígado Magro: Guia prático definitivo para reduzir a gordura no fígado com alimentação saudável (café da manhã, almoço, janta), exercícios fáceis para fazer em casa e bebidas funcionais.">
-  <title>Manual do Fígado Magro | Guia Oficial para Reduzir a Gordura no Fígado</title>
-  
-  <!-- Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0C1812">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Manual do Fígado Magro: O guia prático para reduzir a gordura no fígado com alimentação saudável (café da manhã, almoço, janta), exercícios fáceis para fazer em casa e bebidas funcionais.">
+  <title>Manual do Fígado Magro — O Guia Oficial para Reduzir a Gordura no Fígado</title>
+
+  <!-- Google Fonts: Playfair Display + Inter (idêntico ao site de referência) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <style>
 /* ==========================================================================
-   MANUAL DO FÍGADO MAGRO - ESTILOS OFICIAIS DE ALTA CONVERSÃO
-   Paleta: Dark Health Luxury (Floresta Profundo, Dourado Ouro, Esmeralda e Branco)
+   MANUAL DO FÍGADO MAGRO — PÁGINA DE VENDAS OFICIAL
+   Design System inspirado em layout editorial de alta conversão
+   Tipografia: Playfair Display + Inter | Paleta: Deep Forest + Wellness Cream
    ========================================================================== */
 
-:root {
-  --bg-primary: #070d0a;
-  --bg-secondary: #0d1712;
-  --bg-card: #13221b;
-  --bg-card-hover: #192c23;
-  --bg-glass: rgba(19, 34, 27, 0.85);
-  
-  --gold-primary: #d4af37;
-  --gold-light: #f7e7a9;
-  --gold-glow: #e6b800;
-  --gold-dark: #997a15;
-  --gold-gradient: linear-gradient(135deg, #fae27a 0%, #d4af37 50%, #9e7b16 100%);
-  --gold-btn-gradient: linear-gradient(180deg, #fce072 0%, #dbad31 50%, #b8860b 100%);
-  
-  --emerald-accent: #10b981;
-  --emerald-light: #34d399;
-  --emerald-glow: rgba(16, 185, 129, 0.25);
-  --emerald-dark: #064e3b;
-  
-  --text-primary: #ffffff;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --text-gold: #f7e7a9;
-  
-  --border-light: rgba(212, 175, 55, 0.25);
-  --border-emerald: rgba(16, 185, 129, 0.25);
-  --border-card: rgba(255, 255, 255, 0.08);
-  
-  --shadow-gold: 0 10px 30px -5px rgba(212, 175, 55, 0.35);
-  --shadow-card: 0 15px 35px -5px rgba(0, 0, 0, 0.55);
-  --shadow-btn: 0 8px 25px rgba(212, 175, 55, 0.45);
-  --shadow-book: 0 18px 40px -10px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.2);
-
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-pill: 9999px;
-
-  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
-}
-
-/* Reset Global */
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-secondary);
-  font-family: var(--font-main);
-  line-height: 1.6;
-  overflow-x: hidden;
-  position: relative;
+  margin: 0;
+  background: #0C1812;
+  color: #16261E;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-bottom: 76px; /* Espaço para a barra fixa mobile */
 }
 
-/* Ambient Glow */
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1100px;
-  height: 650px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, rgba(212, 175, 55, 0.08) 40%, transparent 70%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Layout Utilities */
-.container {
-  width: 100%;
-  max-width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.text-center { text-align: center; }
-.text-gold { color: var(--gold-light); }
-.text-emerald { color: var(--emerald-accent); }
-.highlight-gold {
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
-}
-
-/* Top Urgency Bar */
-.top-bar {
-  background: linear-gradient(90deg, #0d1712 0%, #172c21 50%, #0d1712 100%);
-  border-bottom: 1px solid var(--border-light);
-  padding: 9px 15px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--gold-light);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  position: relative;
-  z-index: 100;
-}
-.top-bar-badge {
-  background: var(--gold-primary);
-  color: #070d0a;
-  font-size: 0.72rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: var(--radius-pill);
-  margin-right: 8px;
-  display: inline-block;
-}
-
-/* Hero Section */
-.hero {
-  padding: 42px 0 54px;
-  text-align: center;
-  position: relative;
-}
-
-.hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(212, 175, 55, 0.12);
-  border: 1px solid var(--border-light);
-  color: var(--gold-light);
-  padding: 6px 18px;
-  border-radius: var(--radius-pill);
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
-}
-
-.hero-title {
-  font-size: clamp(1.9rem, 4.8vw, 2.9rem);
-  font-weight: 900;
-  color: var(--text-primary);
-  line-height: 1.2;
-  margin-bottom: 18px;
-  letter-spacing: -0.5px;
-}
-
-.hero-subtitle {
-  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
-  color: var(--text-secondary);
-  max-width: 820px;
-  margin: 0 auto 32px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-/* Master Cover Showcase in Hero */
-.hero-book-showcase {
-  max-width: 780px;
-  margin: 0 auto 32px;
-  position: relative;
-}
-
-.hero-book-card {
-  background: linear-gradient(180deg, rgba(25, 46, 36, 0.92) 0%, rgba(13, 23, 18, 0.96) 100%);
-  border: 2px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 32px 24px;
-  box-shadow: var(--shadow-card), 0 0 50px rgba(16, 185, 129, 0.18);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-book-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gold-gradient);
-}
-
-.master-cover-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.master-cover-img {
-  width: 100%;
-  max-width: 330px;
+img {
+  max-width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: var(--shadow-book);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.master-cover-img:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.9), 0 0 35px rgba(212, 175, 55, 0.4);
-}
-
-.master-badge-floating {
-  position: absolute;
-  top: 15px;
-  right: calc(50% - 210px);
-  background: var(--gold-gradient);
-  color: #070d0a;
-  font-weight: 900;
-  font-size: 0.8rem;
-  padding: 8px 14px;
-  border-radius: var(--radius-pill);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.hero-bundle-banner {
-  background: rgba(0, 0, 0, 0.35);
-  border: 1px solid var(--border-emerald);
-  border-radius: var(--radius-md);
-  padding: 14px 18px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.hero-bundle-banner span {
-  font-size: 0.9rem;
-  color: var(--gold-light);
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.hero-features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.feature-tag {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border-card);
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.feature-tag svg {
-  color: var(--emerald-accent);
-}
-
-/* Call to Action Buttons */
-.cta-wrapper {
-  margin: 28px 0 16px;
-}
-
-.btn-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: var(--gold-btn-gradient);
-  color: #0b1410;
-  font-size: 1.18rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 21px 40px;
-  border-radius: var(--radius-pill);
-  text-decoration: none;
-  box-shadow: var(--shadow-btn);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  width: 100%;
-  max-width: 540px;
-}
-
-.btn-cta:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 14px 40px rgba(212, 175, 55, 0.6);
-}
-
-.btn-cta::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    60deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transform: rotate(45deg);
-  animation: shine 3.5s infinite;
-}
-
-@keyframes shine {
-  0% { transform: translateX(-100%) rotate(45deg); }
-  20%, 100% { transform: translateX(100%) rotate(45deg); }
-}
-
-.cta-subtext {
-  font-size: 0.86rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 10px;
-  flex-wrap: wrap;
-}
-
-.cta-subtext span {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-/* Section Header Shared */
-.section-header {
-  text-align: center;
-  margin-bottom: 42px;
-}
-
-.section-label {
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--gold-primary);
-  margin-bottom: 8px;
   display: block;
 }
 
-.section-title {
-  font-size: clamp(1.65rem, 3.6vw, 2.3rem);
-  font-weight: 800;
-  color: var(--text-primary);
-  line-height: 1.25;
-  margin-bottom: 12px;
+a {
+  color: #10B981;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.section-desc {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
+a:hover {
+  color: #34D399;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   BARRA SUPERIOR DE URGÊNCIA
+   -------------------------------------------------------------------------- */
+.top-bar {
+  background: #07100B;
+  border-bottom: 1px solid #1C3328;
+  padding: 9px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #D1E5DC;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.top-bar-badge {
+  background: #D4AF37;
+  color: #07100B;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 1: HERO SECTION (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s2 {
+  background: #0C1812;
+  color: #F0F7F4;
+  padding: 64px 20px 84px;
+}
+
+.s3 {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+}
+
+.s4 {
+  flex: 1 1 440px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
   max-width: 720px;
   margin: 0 auto;
 }
 
-/* ==========================================================================
-   SEÇÃO DOS 5 PRODUTOS INCLUSOS NO MANUAL DO FÍGADO MAGRO
-   ========================================================================== */
-.bundle-showcase-section {
-  padding: 70px 0;
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-  border-top: 1px solid var(--border-card);
-  border-bottom: 1px solid var(--border-card);
-  position: relative;
+.s5 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(32px, 4.8vw, 54px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
 }
 
-.bundle-master-intro {
-  max-width: 860px;
-  margin: 0 auto 45px;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 30px;
+.s6 {
+  color: #10B981;
+  font-style: italic;
+}
+
+.s7 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #B4CCC0;
+  max-width: 580px;
+}
+
+.hero-mock {
+  flex: 1 1 340px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  display: block;
+  width: min(340px, 100%);
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.s8 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.s9 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #0D6E44;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 19px 34px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(13, 110, 68, 0.45);
+  transition: all 0.25s ease;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.s9:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(13, 110, 68, 0.6);
+}
+
+.s10 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #A3BFB2;
+}
+
+.s11 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 2: RESULTADOS REAIS & PROVA SOCIAL (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.s81 {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  color: #16261E;
+}
+
+.s90 {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.s91 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #122119;
+  text-align: center;
+}
+
+.s91-sub {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #5B7366;
+  text-align: center;
+  font-weight: 400;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(12, 24, 18, 0.09);
+}
+
+.result-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #E8F5EE;
+}
+
+.result-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.result-photo-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(6, 78, 59, 0.88);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.result-stars {
+  color: #F59E0B;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.result-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #2D4237;
+  font-style: italic;
+  flex: 1;
+}
+
+.result-author {
   display: flex;
   align-items: center;
-  gap: 30px;
-  box-shadow: var(--shadow-card);
+  gap: 12px;
+  border-top: 1px solid #EBF2EE;
+  padding-top: 12px;
 }
 
-.bundle-master-img {
-  width: 140px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: var(--shadow-book);
-  flex-shrink: 0;
+.result-info h5 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #122119;
 }
 
-.bundle-master-text h3 {
-  font-size: 1.45rem;
-  color: var(--gold-light);
+/* --------------------------------------------------------------------------
+   SEÇÃO 3: APRESENTANDO O MANUAL (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s48 {
+  padding: 84px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
+}
+
+.pres {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.pres-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 680px;
+}
+
+.s78 {
+  margin: 0;
+  font-size: 12px;
   font-weight: 800;
-  margin-bottom: 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #10B981;
 }
 
-.bundle-master-text p {
-  font-size: 0.98rem;
-  color: var(--text-secondary);
+.s79 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.pres-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.pres-card {
+  margin: 0;
+  background: #13251D;
+  border: 1px solid #233F31;
+  border-radius: 24px;
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pres-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+
+.pres-img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.pres-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pres-pill {
+  font-size: 13px;
+  font-weight: 700;
+  color: #F0F7F4;
+  background: #173024;
+  border: 1px solid #284C3A;
+  border-radius: 10px;
+  padding: 6px 14px;
+}
+
+.pres-title {
+  margin: 6px 0 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.pres-sub {
+  margin: 0;
+  font-size: 16px;
+  color: #B4CCC0;
   line-height: 1.55;
 }
 
-/* Grid com os 5 Guias */
+.pres-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pres-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #F0F7F4;
+}
+
+.pres-list li::before {
+  content: "";
+  flex: 0 0 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #10B981;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 4: DENTRO DO MANUAL — OS 5 GUIAS PRÁTICOS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.learn {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.learn-img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(12, 24, 18, 0.12);
+}
+
+.learn-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0D6E44;
+}
+
+.learn-h {
+  margin: 0 0 12px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.15;
+  color: #122119;
+}
+
+.learn-intro {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DCE7E1;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #5B7366;
+}
+
+.learn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.learn-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid #DCE7E1;
+}
+
+.learn-pill {
+  justify-self: start;
+  font-size: 12px;
+  font-weight: 700;
+  color: #064E3B;
+  background: #E8F5EE;
+  border-radius: 8px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.learn-title {
+  margin: 0 0 4px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.25;
+  color: #122119;
+}
+
+.learn-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #5B7366;
+}
+
+.learn-foot {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   VITRINE DOS 5 PRODUTOS COM CAPAS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.bundle-showcase-section {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  border-top: 1px solid #DCE7E1;
+  border-bottom: 1px solid #DCE7E1;
+}
+
 .bundle-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 26px;
-  margin-bottom: 45px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
 }
 
 .bundle-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-md);
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .bundle-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--gold-primary);
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
-  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  border-color: #10B981;
+  box-shadow: 0 16px 40px rgba(13, 110, 68, 0.1);
 }
 
 .bundle-card-badge {
   display: inline-block;
   align-self: flex-start;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid var(--border-emerald);
-  color: var(--emerald-light);
-  font-size: 0.74rem;
+  background: #E8F5EE;
+  color: #064E3B;
+  font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+  border-radius: 9999px;
   margin-bottom: 14px;
 }
 
@@ -491,151 +627,87 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 18px;
-  padding: 10px 0;
+  margin-bottom: 16px;
 }
 
 .bundle-card-img {
   width: 100%;
-  max-width: 210px;
+  max-width: 180px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
   transition: transform 0.3s ease;
 }
 
 .bundle-card:hover .bundle-card-img {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
 .bundle-card-title {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-  line-height: 1.3;
+  margin: 0 0 6px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #122119;
+  line-height: 1.25;
 }
 
 .bundle-card-desc {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #5B7366;
   line-height: 1.5;
-  margin-bottom: 16px;
   flex-grow: 1;
 }
 
 .bundle-card-highlights {
   list-style: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 14px;
-  margin-top: auto;
+  border-top: 1px solid #EBF2EE;
+  padding-top: 12px;
+  margin: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .bundle-card-highlights li {
-  font-size: 0.85rem;
-  color: var(--gold-light);
+  font-size: 13px;
+  color: #2D4237;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
-  margin-bottom: 6px;
+  line-height: 1.35;
 }
 
 .bundle-card-highlights li svg {
-  color: var(--emerald-accent);
+  color: #10B981;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
-/* Symptoms Section ("Você sente isso?") */
-.symptoms-section {
-  padding: 65px 0;
-  background: var(--bg-primary);
-}
-
-.symptoms-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 18px;
-  margin-bottom: 35px;
-}
-
-.symptom-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-md);
-  padding: 22px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  transition: transform 0.25s ease, border-color 0.25s ease;
-}
-
-.symptom-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(239, 68, 68, 0.4);
-  background: var(--bg-card-hover);
-}
-
-.symptom-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  color: #f87171;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.symptom-content h4 {
-  font-size: 1.08rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 6px;
-}
-
-.symptom-content p {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
-  line-height: 1.45;
-}
-
-.symptom-alert-box {
-  background: rgba(239, 68, 68, 0.08);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  border-radius: var(--radius-md);
-  padding: 20px 24px;
-  text-align: center;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.symptom-alert-box p {
-  font-size: 0.98rem;
-  color: #fca5a5;
-  font-weight: 500;
-}
-
-/* Interactive Before & After Slider */
+/* --------------------------------------------------------------------------
+   SLIDER INTERATIVO ANTES & DEPOIS (DARK FOREST)
+   -------------------------------------------------------------------------- */
 .compare-section {
-  padding: 65px 0;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-card);
-  border-bottom: 1px solid var(--border-card);
+  padding: 80px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
 }
 
 .slider-container {
-  max-width: 650px;
-  margin: 0 auto 30px;
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 20px;
   position: relative;
   user-select: none;
-  border-radius: var(--radius-lg);
+  -webkit-user-select: none;
+  border-radius: 20px;
   overflow: hidden;
-  border: 2px solid var(--border-light);
-  box-shadow: var(--shadow-card);
+  border: 2px solid #233F31;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
   background: #000;
-  height: 380px;
+  height: clamp(280px, 48vw, 360px);
+  touch-action: none;
 }
 
 .slider-img {
@@ -648,42 +720,64 @@ body::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 18px;
   text-align: center;
 }
 
 .slider-img.before {
-  background: linear-gradient(135deg, #2d1810 0%, #170b07 100%);
-  color: #ffb4a2;
+  background: linear-gradient(135deg, #2A1510 0%, #150906 100%);
+  color: #FFB4A2;
 }
 
 .slider-img.after {
-  background: linear-gradient(135deg, #063d27 0%, #031c12 100%);
-  color: #a7f3d0;
+  background: linear-gradient(135deg, #093822 0%, #03170E 100%);
+  color: #A7F3D0;
   clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.slider-svg {
+  width: clamp(120px, 24vw, 170px);
+  height: auto;
+  max-height: clamp(80px, 16vw, 115px);
+  display: block;
+}
+
+.slider-img h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(17px, 2.8vw, 21px);
+  font-weight: 700;
+  margin: 10px 0 4px;
+}
+
+.slider-img p {
+  font-size: clamp(12px, 2vw, 14px);
+  max-width: 320px;
+  margin: 0;
+  line-height: 1.35;
 }
 
 .slider-tag {
   position: absolute;
-  top: 16px;
-  padding: 6px 14px;
-  border-radius: var(--radius-pill);
-  font-size: 0.8rem;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  z-index: 5;
 }
 
 .slider-tag.before-tag {
-  left: 16px;
-  background: rgba(239, 68, 68, 0.85);
-  color: #fff;
+  left: 12px;
+  background: rgba(220, 38, 38, 0.9);
+  color: #FFFFFF;
 }
 
 .slider-tag.after-tag {
-  right: 16px;
-  background: rgba(16, 185, 129, 0.9);
-  color: #fff;
+  right: 12px;
+  background: rgba(16, 185, 129, 0.92);
+  color: #FFFFFF;
 }
 
 .slider-handle {
@@ -692,10 +786,10 @@ body::before {
   bottom: 0;
   left: 50%;
   width: 4px;
-  background: var(--gold-light);
+  background: #D4AF37;
   cursor: ew-resize;
   z-index: 20;
-  box-shadow: 0 0 12px var(--gold-primary);
+  box-shadow: 0 0 12px #D4AF37;
 }
 
 .slider-handle-btn {
@@ -703,448 +797,536 @@ body::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 44px;
-  height: 44px;
-  background: var(--gold-gradient);
+  width: 40px;
+  height: 40px;
+  background: #D4AF37;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1a1a1a;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.7);
+  color: #07100B;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
   font-weight: bold;
 }
 
-/* Story & Science Section */
-.story-section {
-  padding: 70px 0;
+/* --------------------------------------------------------------------------
+   SEÇÃO 6: BÔNUS EXCLUSIVOS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.bonuses-section {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  border-top: 1px solid #DCE7E1;
 }
 
-.story-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 38px 32px;
-  max-width: 840px;
-  margin: 0 auto;
-}
-
-.story-card p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-}
-
-.story-card p:last-child {
-  margin-bottom: 0;
-}
-
-.story-card strong {
-  color: var(--text-primary);
-}
-
-/* Testimonials / Social Proof */
-.testimonials-section {
-  padding: 70px 0;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-card);
-  border-bottom: 1px solid var(--border-card);
-}
-
-.testimonials-grid {
+.bonuses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 22px;
-  margin-bottom: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
 }
 
-.testimonial-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-md);
-  padding: 24px;
+.bonus-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
+  padding: 28px 22px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.stars {
-  color: #fbbf24;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.testimonial-text {
-  font-size: 0.98rem;
-  color: var(--text-primary);
-  font-style: italic;
-  line-height: 1.55;
-  margin-bottom: 18px;
-}
-
-.testimonial-author {
-  display: flex;
   align-items: center;
-  gap: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
-  padding-top: 14px;
-}
-
-.author-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--gold-gradient);
-  color: #070d0a;
-  font-weight: 800;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-}
-
-.author-info h5 {
-  font-size: 0.95rem;
-  color: var(--text-primary);
-  font-weight: 700;
-}
-
-.author-info span {
-  font-size: 0.8rem;
-  color: var(--emerald-accent);
-}
-
-/* Future Pacing / Emotional Section */
-.future-section {
-  padding: 65px 0;
-  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
-}
-
-.future-card {
-  max-width: 820px;
-  margin: 0 auto;
-  background: var(--bg-glass);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 40px 32px;
-  backdrop-filter: blur(10px);
-}
-
-.future-card h3 {
-  font-size: 1.65rem;
-  color: var(--gold-light);
-  font-weight: 800;
-  margin-bottom: 18px;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.05);
 }
 
-.future-card p {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--text-secondary);
-  margin-bottom: 18px;
-}
-
-.future-list {
-  list-style: none;
-  margin: 24px 0 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 12px;
-}
-
-.future-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.98rem;
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-.future-list li svg {
-  color: var(--emerald-accent);
-  flex-shrink: 0;
-}
-
-/* Irresistible Offer Section */
-.offer-section {
-  padding: 80px 0;
-  background: linear-gradient(180deg, var(--bg-primary) 0%, #0d1a15 50%, var(--bg-primary) 100%);
-  position: relative;
-}
-
-.offer-card {
-  max-width: 680px;
-  margin: 0 auto;
-  background: linear-gradient(180deg, #15271f 0%, #0b1510 100%);
-  border: 2px solid var(--gold-primary);
-  border-radius: var(--radius-lg);
-  padding: 42px 32px;
-  box-shadow: 0 0 50px rgba(212, 175, 55, 0.35), var(--shadow-card);
-  position: relative;
-  text-align: center;
-}
-
-.offer-ribbon {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--gold-gradient);
-  color: #070d0a;
-  font-size: 0.85rem;
+.bonus-badge {
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 6px 22px;
-  border-radius: var(--radius-pill);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.countdown-box {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  padding: 10px 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 24px;
-  font-size: 0.9rem;
-  color: var(--gold-light);
-}
-
-.timer-digits {
-  font-family: monospace;
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: #ef4444;
-  letter-spacing: 1px;
-}
-
-.offer-stack {
-  text-align: left;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 22px 0;
-  margin: 20px 0;
-}
-
-.offer-stack-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.95rem;
-  padding: 8px 0;
-  color: var(--text-secondary);
-}
-
-.offer-stack-item span:first-child {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.offer-stack-item .value-strike {
-  text-decoration: line-through;
-  color: var(--text-muted);
-  font-size: 0.88rem;
-}
-
-.pricing-box {
-  margin: 25px 0 20px;
-}
-
-.price-was {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-}
-
-.price-was span {
-  text-decoration: line-through;
-}
-
-.price-now {
-  font-size: clamp(2.8rem, 6vw, 3.8rem);
-  font-weight: 900;
-  color: var(--gold-light);
-  line-height: 1;
-  margin: 6px 0;
-  text-shadow: 0 0 20px rgba(212, 175, 55, 0.45);
-}
-
-.price-now small {
-  font-size: 1.3rem;
-  vertical-align: middle;
-  font-weight: 700;
-}
-
-.price-installments {
-  font-size: 0.95rem;
-  color: var(--emerald-accent);
-  font-weight: 600;
-}
-
-/* Guarantee Section */
-.guarantee-box {
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid var(--border-emerald);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  max-width: 680px;
-  margin: 30px auto 0;
-  text-align: left;
-}
-
-.guarantee-badge-img {
-  width: 70px;
-  height: 70px;
-  flex-shrink: 0;
-}
-
-.guarantee-text h4 {
-  color: var(--text-primary);
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.guarantee-text p {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-
-/* FAQ Section */
-.faq-section {
-  padding: 70px 0;
-}
-
-.faq-list {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-md);
+  color: #064E3B;
+  background: #E8F5EE;
+  padding: 5px 12px;
+  border-radius: 9999px;
   margin-bottom: 12px;
-  overflow: hidden;
-  transition: border-color 0.25s ease;
 }
 
-.faq-item:hover {
-  border-color: var(--border-light);
-}
-
-.faq-question {
-  width: 100%;
-  padding: 20px 24px;
-  text-align: left;
-  background: transparent;
-  border: none;
-  color: var(--text-primary);
-  font-size: 1.05rem;
-  font-weight: 700;
-  cursor: pointer;
+.bonus-img-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  margin: 4px 0 16px;
+  width: 100%;
 }
 
-.faq-icon {
-  font-size: 1.3rem;
-  color: var(--gold-primary);
+.bonus-img {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
   transition: transform 0.3s ease;
 }
 
-.faq-item.active .faq-icon {
-  transform: rotate(45deg);
+.bonus-card:hover .bonus-img {
+  transform: translateY(-4px) scale(1.02);
 }
 
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease-out, padding 0.35s ease;
-  padding: 0 24px;
-  color: var(--text-secondary);
-  font-size: 0.96rem;
+.bonus-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #E8F5EE;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.bonus-card h4 {
+  margin: 0 0 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #122119;
+  line-height: 1.25;
+}
+
+.bonus-card p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #5B7366;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.bonus-price {
+  font-size: 14px;
+  color: #71887C;
+  font-weight: 600;
+}
+
+.bonus-price .strike {
+  text-decoration: line-through;
+  margin-right: 6px;
+}
+
+.bonus-price .free {
+  color: #0D6E44;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 8: COMO VOCÊ RECEBE (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s186 {
+  padding: 84px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
+}
+
+.s187 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.s188 {
+  background: #13251D;
+  border: 1px solid #233F31;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.s188 svg {
+  color: #10B981;
+}
+
+.s189 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.s88 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #B4CCC0;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 9: CALLOUT INTERMEDIÁRIO (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.callout-section {
+  padding: 70px 20px;
+  background: #F6F9F7;
+  text-align: center;
+  border-top: 1px solid #DCE7E1;
+  border-bottom: 1px solid #DCE7E1;
+}
+
+.callout-box {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.callout-h {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.2;
+  color: #122119;
+}
+
+.callout-desc {
+  margin: 0;
+  font-size: 16px;
+  color: #5B7366;
   line-height: 1.6;
 }
 
-.faq-item.active .faq-answer {
-  max-height: 380px;
-  padding: 0 24px 20px;
+/* --------------------------------------------------------------------------
+   SEÇÃO 11: A CAIXA DE OFERTA PRINCIPAL (IDENTIDADE ESPOSA DESEJADA)
+   -------------------------------------------------------------------------- */
+.s213 {
+  max-width: 580px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 38px 28px;
+  box-shadow: 0 20px 60px rgba(12, 24, 18, 0.12);
+  border: 2px solid #0D6E44;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #16261E;
 }
 
-/* Footer & Compliance */
-.footer {
-  background: #040806;
-  border-top: 1px solid var(--border-card);
-  padding: 50px 0 100px;
+.s214 {
+  margin: 0;
   text-align: center;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(24px, 3.4vw, 32px);
+  line-height: 1.2;
+  color: #122119;
 }
 
-.footer-logo {
-  font-size: 1.35rem;
+.offer-img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.s246 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 6px;
+}
+
+.s247 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #EBF2EE;
+  font-size: 14.5px;
+  color: #2D4237;
+}
+
+.s248 {
+  color: #5B7366;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.s249 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #122119;
+}
+
+.s250 {
+  text-decoration: line-through;
+  color: #71887C;
+  white-space: nowrap;
+}
+
+.s251 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.s252 {
+  font-size: 15px;
+  color: #5B7366;
+}
+
+.s253 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(44px, 8vw, 54px);
   font-weight: 800;
-  color: var(--gold-light);
-  margin-bottom: 16px;
-  display: inline-block;
+  color: #0D6E44;
+  line-height: 1.1;
+}
+
+.s254 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #16261E;
+}
+
+.s255 {
+  display: block;
+  text-align: center;
+  background: #0D6E44;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(13, 110, 68, 0.35);
+  transition: all 0.25s ease;
+}
+
+.s255:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(13, 110, 68, 0.5);
+}
+
+.s256 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 12: GARANTIA BLINDADA (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.guarantee-wrap {
+  max-width: 580px;
+  margin: 24px auto 0;
+  background: #E8F5EE;
+  border: 1px solid #B8E0CC;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.guarantee-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0D6E44;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.guarantee-badge small {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.guarantee-text h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #064E3B;
+}
+
+.guarantee-text p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #2D4237;
+  line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 13: PERGUNTAS FREQUENTES (FAQ ACCORDION ESTILO ESPOSA DESEJADA)
+   -------------------------------------------------------------------------- */
+.s289 {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.s290 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.s291 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: #122119;
+}
+
+.s293 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: #10B981;
+}
+
+.faq-q {
+  width: 100%;
+  padding: 18px 22px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #122119;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #C4DAD0;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  transition: transform 0.25s, background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.faq-q[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+  background: #0D6E44;
+  color: #FFFFFF;
+  border-color: #0D6E44;
+}
+
+.faq-a {
+  padding: 0 22px 18px;
+}
+
+.faq-a p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   RODAPÉ (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.footer {
+  background: #07100B;
+  color: #71887C;
+  padding: 48px 20px 88px;
+  text-align: center;
+  border-top: 1px solid #1C3328;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  font-size: 13.5px;
+  color: #8CA397;
+  line-height: 1.55;
 }
 
 .footer-disclaimer {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 740px;
+  margin: 16px auto;
+  font-size: 12px;
+  color: #556B60;
   line-height: 1.6;
-  font-size: 0.78rem;
-  color: #64748b;
 }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 18px;
+.footer-copy {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #556B60;
 }
 
-.footer-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.82rem;
-  transition: color 0.2s;
-}
-
-.footer-links a:hover {
-  color: var(--gold-light);
-}
-
-/* Floating Bottom Sticky Bar for Mobile Conversion */
+/* --------------------------------------------------------------------------
+   BARRA FIXA MOBILE FLUTUANTE (STICKY BAR)
+   -------------------------------------------------------------------------- */
 .sticky-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(13, 23, 18, 0.96);
+  background: rgba(12, 24, 18, 0.97);
   backdrop-filter: blur(12px);
-  border-top: 1px solid var(--border-light);
-  padding: 12px 20px;
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid #233F31;
+  padding: 10px 20px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   z-index: 999;
-  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.5);
-  transform: translateY(100%);
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
+  transform: translateY(110%);
   transition: transform 0.35s ease-in-out;
 }
 
@@ -1155,572 +1337,588 @@ body::before {
 .sticky-info {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .sticky-title {
-  font-size: 0.85rem;
+  font-size: 13px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sticky-price {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: var(--gold-light);
+  font-size: 17px;
+  font-weight: 900;
+  color: #10B981;
 }
 
 .sticky-btn {
-  background: var(--gold-btn-gradient);
-  color: #070d0a;
-  font-size: 0.92rem;
+  background: #0D6E44;
+  color: #FFFFFF;
+  font-size: 13.5px;
   font-weight: 800;
-  padding: 10px 22px;
-  border-radius: var(--radius-pill);
+  padding: 11px 20px;
+  border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-}
-
-/* Live Purchase Toast Popup */
-.live-toast {
-  position: fixed;
-  bottom: 85px;
-  left: 20px;
-  background: rgba(19, 34, 27, 0.96);
-  border: 1px solid var(--border-emerald);
-  padding: 12px 18px;
-  border-radius: var(--radius-md);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 998;
-  max-width: 320px;
-  transform: translateX(-150%);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.live-toast.show {
-  transform: translateX(0);
-}
-
-.toast-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--emerald-accent);
-  color: #064e3b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 15px rgba(13, 110, 68, 0.4);
+  white-space: nowrap;
   flex-shrink: 0;
 }
 
-.toast-text {
-  font-size: 0.8rem;
-  line-height: 1.35;
-  color: var(--text-primary);
+.sticky-btn:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
 }
 
-.toast-time {
-  font-size: 0.72rem;
-  color: var(--text-muted);
+/* --------------------------------------------------------------------------
+   RESPONSIVIDADE (MEDIA QUERIES)
+   -------------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .learn {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .learn-img {
+    max-width: 320px;
+  }
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 768px) {
-  .hero {
-    padding: 30px 0 36px;
+@media (max-width: 760px) {
+  .s2 {
+    padding: 48px 16px 64px;
   }
-  .hero-title {
-    font-size: 1.8rem;
+  .s3 {
+    gap: 36px;
   }
-  .btn-cta {
-    font-size: 1.02rem;
+  .pres-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .pres-card {
+    padding: 20px 16px 24px;
+  }
+  .s9 {
     padding: 18px 24px;
+    font-size: 16px;
     width: 100%;
   }
-  .bundle-master-intro {
-    flex-direction: column;
-    text-align: center;
-    padding: 24px 18px;
+  .s213 {
+    padding: 30px 18px;
   }
-  .bundle-master-img {
-    width: 160px;
-  }
-  .master-cover-img {
-    max-width: 250px;
-  }
-  .master-badge-floating {
-    position: static;
-    margin: 10px auto;
-    display: inline-flex;
-  }
-  .slider-container {
-    height: 320px;
-  }
-  .guarantee-box {
+  .guarantee-wrap {
     flex-direction: column;
     text-align: center;
   }
-  .offer-card {
-    padding: 32px 18px;
+}
+
+@media (max-width: 480px) {
+  .learn-row {
+    grid-template-columns: 92px 1fr;
+    gap: 12px;
   }
-  .future-card {
-    padding: 28px 18px;
+  .s10 {
+    gap: 10px;
   }
-  .sticky-bar {
-    padding: 10px 15px;
+  .s253 {
+    font-size: 42px;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO DE PROVAS SOCIAIS EM PRINTS DE CONVERSAS (WHATSAPP)
+   ========================================================================== */
+.prints-section {
+  padding: 80px 20px;
+  background: #F4FAF6;
+  border-top: 1px solid #E1EFE8;
+  border-bottom: 1px solid #E1EFE8;
+}
+
+.s170 {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #D1E5DC;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(13, 110, 68, 0.06);
+}
+
+.s171 {
+  padding: 44px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.s172 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0D6E44;
+  text-align: center;
+}
+
+.s173 {
+  margin: 0 0 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 38px);
+  line-height: 1.15;
+  color: #122119;
+  text-align: center;
+  font-weight: 800;
+}
+
+.prints-sub {
+  margin: 0 auto;
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #5B7366;
+  text-align: center;
+}
+
+/* Carrossel de Prints */
+.car2 {
+  max-width: 480px;
+  width: 100%;
+  margin: 12px auto 0;
+  position: relative;
+}
+
+.car2 .car-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.car2 .car-hint {
+  font-size: 13px;
+  color: #5B7366;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.car2 .car-hint::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.car2 .car-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5B7366;
+  white-space: nowrap;
+}
+
+.car2 .car-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #F0F7F4;
+  border: 1px solid #D1E5DC;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.car2 .car-btn:hover:not(:disabled) {
+  background: #0D6E44;
+  color: #FFFFFF;
+  border-color: #0D6E44;
+}
+
+.car2 .car-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.car2 .car-track {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  gap: 20px;
+  padding: 4px 2px 14px;
+}
+
+.car2 .car-track::-webkit-scrollbar {
+  display: none;
+}
+
+.car2 .s174 {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: #FFFFFF;
+  border: 1px solid #D1E5DC;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(13, 110, 68, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car2 .s174:hover {
+  box-shadow: 0 12px 32px rgba(13, 110, 68, 0.12);
+}
+
+.car2 .s175 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 420 / 590;
+  object-fit: cover;
+  background: #ECE5DD;
+  display: block;
+  border-bottom: 1px solid #D1E5DC;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.car2 .s175:hover {
+  filter: brightness(0.98);
+}
+
+.car2 .s176 {
+  margin: 0;
+  padding: 18px 20px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #122119;
+  background: #FAFDFB;
+  flex: 1;
+}
+
+.s177 {
+  border-top: 1px solid #EBF5F0;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #FFFFFF;
+}
+
+.s178 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.s179 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #122119;
+}
+
+.s180 {
+  font-size: 12px;
+  color: #71887C;
+}
+
+.s181 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0D6E44;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background: #EBF5F0;
+  transition: all 0.2s ease;
+}
+
+.s181:hover {
+  background: #0D6E44;
+  color: #FFFFFF;
+}
+
+/* Barra inferior de conversão do Card */
+.s182 {
+  background: #FAFDFB;
+  border-top: 1px solid #D1E5DC;
+  padding: 22px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.s183 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #064E3B;
+  background: #EBF5F0;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #D1E5DC;
+}
+
+.s184 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: linear-gradient(135deg, #10B981, #0D6E44);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 10px 10px 26px;
+  border-radius: 999px;
+  min-width: 290px;
+  box-shadow: 0 4px 16px rgba(13, 110, 68, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.s184:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(13, 110, 68, 0.35);
+}
+
+.s185 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+.lightbox::backdrop {
+  background: rgba(7, 24, 18, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+.lb-card {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px 30px;
+  box-sizing: border-box;
+}
+
+.lb-img {
+  display: block;
+  width: auto;
+  max-width: min(480px, 94vw);
+  max-height: calc(100vh - 100px);
+  border-radius: 18px;
+  background: #ECE5DD;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.lb-close {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 0;
+  background: #FFFFFF;
+  color: #122119;
+  font-size: 30px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lb-close:hover {
+  transform: scale(1.08);
+  background: #F4FAF6;
+}
+
+@media (max-width: 760px) {
+  .prints-section {
+    padding: 56px 16px;
+  }
+  .s171 {
+    padding: 32px 18px 24px;
+  }
+  .s182 {
+    padding: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .s184 {
+    min-width: unset;
+    width: 100%;
   }
 }
 
 </style>
 </head>
+
 <body>
 
-  <!-- Barra Superior de Urgência -->
-  <header class="top-bar">
-    <span class="top-bar-badge">OFERTA DE LANÇAMENTO</span>
-    Apenas hoje: Acesse o combo completo do <strong>Manual do Fígado Magro</strong> com os 5 Guias Práticos inclusos!
-  </header>
+  <!-- ==========================================================================
+       SEÇÃO 1: HERO SECTION (ESTILO ESPOSA DESEJADA)
+       ========================================================================== -->
+  <section class="s2">
+    <div class="s3">
+      <div class="s4">
+        <h1 class="s5">
+          Você não precisa esperar um diagnóstico <em class="s6">irreversível</em> para cuidar do <em class="s6">fígado</em>.
+        </h1>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-pill">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        MÉTODO 100% NATURAL · ALIMENTAÇÃO + EXERCÍCIOS + BEBIDAS
-      </div>
-
-      <h1 class="hero-title">
-        Manual do <span class="highlight-gold">Fígado Magro</span>
-      </h1>
-
-      <p class="hero-subtitle">
-        O guia prático definitivo para reduzir a gordura no fígado (esteatose hepática), desinflamar o abdômen e recuperar sua vitalidade através de receitas deliciosas de <strong>café, almoço e janta</strong>, <strong>exercícios fáceis de fazer em casa</strong> e <strong>bebidas funcionais que derretem a gordura visceral</strong>.
-      </p>
-
-      <!-- Showcase da Capa Mestre no Hero -->
-      <div class="hero-book-showcase">
-        <div class="hero-book-card">
-          <div class="master-cover-wrapper">
-            <img src="images/capa-mestre.jpg" alt="Manual do Fígado Magro - Guia Completo" class="master-cover-img" loading="eager">
-            <div class="master-badge-floating">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              COLEÇÃO COMPLETA 5 EM 1
-            </div>
-          </div>
-
-          <div class="hero-bundle-banner">
-            <span>☕ 1º Café da Manhã</span>
-            <span>🥗 2º Almoço</span>
-            <span>🍲 3º Janta</span>
-            <span>🏡 4º Exercícios em Casa</span>
-            <span>🍹 5º Bebidas Funcionais</span>
-          </div>
-
-          <div class="hero-features-list">
-            <span class="feature-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              100% Prático e Caseiro
-            </span>
-            <span class="feature-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Sem Dietas Restritivas
-            </span>
-            <span class="feature-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Sem Precisar de Academia
-            </span>
-            <span class="feature-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Resultados Visíveis em 21 Dias
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Botão CTA Principal -->
-      <div class="cta-wrapper">
-        <a href="#oferta" class="btn-cta">
-          <span>QUERO O MANUAL DO FÍGADO MAGRO</span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-        <div class="cta-subtext">
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Garantia Incondicional de 7 Dias
-          </span>
-          <span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            Acesso Imediato no Celular ou Computador
-          </span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção: "Você sente algum destes sintomas?" -->
-  <section class="symptoms-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">O SINAL DE ALERTA</span>
-        <h2 class="section-title">Você reconhece algum destes sintomas no seu corpo?</h2>
-        <p class="section-desc">A esteatose hepática (gordura no fígado) é silenciosa, mas envia sinais claros de sobrecarga metabólica todos os dias.</p>
-      </div>
-
-      <div class="symptoms-grid">
-        <!-- Sintoma 1 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Cansaço e Fadiga Diária</h4>
-            <p>Você acorda já exausto e sem energia, sentindo que uma noite inteira de sono nunca é suficiente para descansar o corpo.</p>
-          </div>
-        </div>
-
-        <!-- Sintoma 2 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Peso no Lado Direito</h4>
-            <p>Sensação de estufamento ou leve pontada logo abaixo da costela direita, que piora após refeições mais pesadas.</p>
-          </div>
-        </div>
-
-        <!-- Sintoma 3 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Barriga Dura e Empachamento</h4>
-            <p>Digestão lenta, estufamento constante e sensação de que qualquer comida se transforma em peso e azia no estômago.</p>
-          </div>
-        </div>
-
-        <!-- Sintoma 4 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 16s-1.5-2-4-2-4 2-4 2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Boca Amarga ao Acordar</h4>
-            <p>Gosto amargo na boca pela manhã, mau hálito persistente e sensação de língua áspera ou esbranquiçada.</p>
-          </div>
-        </div>
-
-        <!-- Sintoma 5 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Metabolismo Completamente Travado</h4>
-            <p>Dificuldade extrema de perder medidas na cintura, mesmo comendo pouco, com gordura visceral resistente acumulada.</p>
-          </div>
-        </div>
-
-        <!-- Sintoma 6 -->
-        <div class="symptom-card">
-          <div class="symptom-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          </div>
-          <div class="symptom-content">
-            <h4>Exames de Sangue e Ultrassom Alterados</h4>
-            <p>TGO, TGP, Gama GT ou Ferritina acima dos valores de referência, e diagnóstico médico de esteatose Grau 1, 2 ou 3.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="symptom-alert-box">
-        <p>
-          ⚠️ <strong>Atenção:</strong> A gordura no fígado não some apenas "fechando a boca". É necessário acionar a desintoxicação celular correta através dos nutrientes certos, movimento leve e bebidas de ação hepática para drenar os lipídios acumulados nos hepatócitos.
+        <p class="s7">
+          Descubra como desinflamar seu corpo, eliminar o inchaço abdominal e recuperar sua energia diária com receitas
+          simples de <strong>café, almoço e janta</strong>, <strong>exercícios fáceis de fazer em casa</strong> e
+          <strong>bebidas funcionais</strong>.
         </p>
+
+        <div class="s8">
+          <a href="#oferta" class="s9">Quero derreter a gordura no fígado</a>
+          <div class="s10">
+            <span class="s11">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Compra 100% segura
+            </span>
+            <span class="s11">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+              Acesso imediato
+            </span>
+            <span class="s11">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              Garantia de 7 dias
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-mock">
+        <img src="images/capa-mestre.jpg" alt="Manual do Fígado Magro - Guia Completo" class="hero-img"
+          fetchpriority="high">
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       SEÇÃO PRINCIPAL: O QUE VOCÊ VAI RECEBER (OS 5 PRODUTOS INCLUSOS)
+       SEÇÃO 2: RESULTADOS REAIS (LIGHT CREAM)
        ========================================================================== -->
-  <section class="bundle-showcase-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">O QUE VOCÊ VAI RECEBER</span>
-        <h2 class="section-title">O Ecossistema Completo do Manual do Fígado Magro</h2>
-        <p class="section-desc">
-          Ao adquirir hoje, você não recebe apenas um material comum. Você tem acesso à coleção definitiva de 5 manuais práticos integrados, projetados para cuidar do seu fígado 24 horas por dia:
-        </p>
+  <section class="s81">
+    <div class="s90">
+      <div>
+        <h2 class="s91">Sorriso de quem teve resultado</h2>
+        <p class="s91-sub">Pessoas que derreteram a gordura no fígado e se sentem bem novamente</p>
       </div>
 
-      <!-- Card Introdutório da Capa Mestre -->
-      <div class="bundle-master-intro">
-        <img src="images/capa-mestre.jpg" alt="Manual do Fígado Magro" class="bundle-master-img">
-        <div class="bundle-master-text">
-          <h3>Manual do Fígado Magro — O Guia Mestre</h3>
-          <p>
-            O método central que engloba toda a ciência prática da saúde hepática. Ele ensina exatamente como o fígado processa as gorduras, como desativar os gatilhos inflamatórios e como sincronizar a sua alimentação, as bebidas funcionais e os exercícios caseiros para resultados rápidos e duradouros.
-          </p>
-        </div>
-      </div>
-
-      <!-- Grid dos 5 Produtos Específicos -->
-      <div class="bundle-grid">
-        
-        <!-- Produto 1: Café da Manhã -->
-        <div class="bundle-card">
-          <span class="bundle-card-badge">Volume #1 · Energia Matinal</span>
-          <div class="bundle-card-img-wrap">
-            <img src="images/cafe-da-manha.jpg" alt="Manual do Fígado Magro - Café da Manhã" class="bundle-card-img" loading="lazy">
-          </div>
-          <h3 class="bundle-card-title">1º Café da Manhã Anti-Gordura</h3>
-          <p class="bundle-card-desc">
-            Receitas rápidas de 5 a 10 minutos para iniciar o dia sem picos de glicose e ativando a queima de gordura hepática logo ao acordar.
-          </p>
-          <ul class="bundle-card-highlights">
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Sem farinhas brancas ou açúcares inflamatórios
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Combinações ricas em colina que blindam o fígado
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Acaba com a fadiga e garante disposição matinal
-            </li>
-          </ul>
-        </div>
-
-        <!-- Produto 2: Almoço -->
-        <div class="bundle-card">
-          <span class="bundle-card-badge">Volume #2 · Digestão Leve</span>
-          <div class="bundle-card-img-wrap">
-            <img src="images/almoco.jpg" alt="Manual do Fígado Magro - Almoço" class="bundle-card-img" loading="lazy">
-          </div>
-          <h3 class="bundle-card-title">2º Almoço Desintoxicante</h3>
-          <p class="bundle-card-desc">
-            Pratos saborosos e nutritivos que mantêm a saciedade, desinflamam o trato digestivo e evitam aquela sonolência pesada após comer.
-          </p>
-          <ul class="bundle-card-highlights">
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Proporções exatas de proteínas magras e crucíferos
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Temperos anti-inflamatórios que aceleram o metabolismo
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Elimina o inchaço e a sensação de estômago estufado
-            </li>
-          </ul>
-        </div>
-
-        <!-- Produto 3: Janta -->
-        <div class="bundle-card">
-          <span class="bundle-card-badge">Volume #3 · Reparo Noturno</span>
-          <div class="bundle-card-img-wrap">
-            <img src="images/janta.jpg" alt="Manual do Fígado Magro - Janta" class="bundle-card-img" loading="lazy">
-          </div>
-          <h3 class="bundle-card-title">3º Janta Leve & Reparadora</h3>
-          <p class="bundle-card-desc">
-            Refeições noturnas práticas que promovem uma digestão ultraleve e preparam o corpo para o ciclo biológico de renovação hepática na madrugada.
-          </p>
-          <ul class="bundle-card-highlights">
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Sopas, cremes e pratos que não pesam no estômago
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Combate o refluxo, a azia e as noites mal dormidas
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Estimula a queima de gordura visceral durante o sono
-            </li>
-          </ul>
-        </div>
-
-        <!-- Produto 4: Exercícios para Fazer em Casa -->
-        <div class="bundle-card">
-          <span class="bundle-card-badge">Volume #4 · Movimento Prático</span>
-          <div class="bundle-card-img-wrap">
-            <img src="images/exercicios.jpg" alt="Manual do Fígado Magro - Exercícios para Fazer em Casa" class="bundle-card-img" loading="lazy">
-          </div>
-          <h3 class="bundle-card-title">4º Exercícios para Fazer em Casa</h3>
-          <p class="bundle-card-desc">
-            Roteiros de exercícios simples e de baixo impacto de 10 a 15 minutos, pensados para pessoas com sobrepeso, sem fôlego ou com dores articulares.
-          </p>
-          <ul class="bundle-card-highlights">
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Pode ser feito no chão da sala, sem equipamentos
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Ativa a circulação e força a drenagem de lipídios
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Aumenta a sensibilidade à insulina naturalmente
-            </li>
-          </ul>
-        </div>
-
-        <!-- Produto 5: Bebidas para Derreter a Gordura no Fígado -->
-        <div class="bundle-card" style="grid-column: 1 / -1; max-width: 650px; margin: 0 auto; width: 100%;">
-          <span class="bundle-card-badge">Volume #5 · O Potencializador</span>
-          <div class="bundle-card-img-wrap">
-            <img src="images/bebidas.jpg" alt="Manual do Fígado Magro - Bebidas para Derreter a Gordura no Fígado" class="bundle-card-img" loading="lazy">
-          </div>
-          <h3 class="bundle-card-title text-center">5º Bebidas para Derreter a Gordura no Fígado</h3>
-          <p class="bundle-card-desc text-center">
-            A seleção mais potente de infusões, chás termogênicos, sucos funcionais e águas aromatizadas que agem como verdadeiros detergentes naturais para os ductos biliares e células do fígado.
-          </p>
-          <ul class="bundle-card-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px;">
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Shots matinais de desintoxicação rápida
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Chás noturnos calmantes que ativam a autofagia
-            </li>
-            <li>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Ingredientes baratos de qualquer feira ou mercado
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="text-center">
-        <a href="#oferta" class="btn-cta">
-          <span>QUERO RECEBER OS 5 GUIAS COM DESCONTO</span>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Slider Interativo Antes & Depois -->
-  <section class="compare-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">TRANSFORMAÇÃO REAL</span>
-        <h2 class="section-title">Veja a Diferença no seu Organismo</h2>
-        <p class="section-desc">Arraste a linha divisória dourada para comparar um fígado sobrecarregado de gordura com um fígado regenerado pelo Manual do Fígado Magro:</p>
-      </div>
-
-      <div class="slider-container">
-        <!-- Lado Antes -->
-        <div class="slider-img before">
-          <span class="slider-tag before-tag">Antes: Fígado Inflamado (Grau 2/3)</span>
-          <svg width="180" height="130" viewBox="0 0 240 180" fill="none">
-            <path d="M40 70 C50 30 130 20 180 50 C210 70 220 110 200 140 C170 170 90 175 50 160 C30 145 20 100 40 70 Z" fill="#693b2a" stroke="#d97706" stroke-width="3" />
-            <!-- Gotículas de gordura visceral -->
-            <circle cx="80" cy="80" r="12" fill="#fbbf24" opacity="0.8" />
-            <circle cx="120" cy="70" r="16" fill="#f59e0b" opacity="0.9" />
-            <circle cx="150" cy="100" r="14" fill="#fbbf24" opacity="0.8" />
-            <circle cx="95" cy="120" r="15" fill="#f59e0b" opacity="0.9" />
-            <circle cx="160" cy="130" r="10" fill="#fbbf24" opacity="0.7" />
-            <circle cx="130" cy="140" r="13" fill="#d97706" opacity="0.8" />
-          </svg>
-          <h3 style="color:#fca5a5; margin-top:14px; font-size:1.15rem;">Células Congestionadas de Lipídios</h3>
-          <p style="font-size:0.85rem; max-width:320px; margin-top:6px; color:#fecaca;">Cansaço constante, TGO/TGP acima de 70, barriga dura e digestão travada.</p>
-        </div>
-
-        <!-- Lado Depois -->
-        <div class="slider-img after">
-          <span class="slider-tag after-tag">Depois: Fígado Magro & Regenerado</span>
-          <svg width="180" height="130" viewBox="0 0 240 180" fill="none">
-            <path d="M40 70 C50 30 130 20 180 50 C210 70 220 110 200 140 C170 170 90 175 50 160 C30 145 20 100 40 70 Z" fill="#0d5c3f" stroke="#34d399" stroke-width="3" />
-            <!-- Células limpas com fluxo oxigenado -->
-            <path d="M70 80 Q120 60 170 80" stroke="#a7f3d0" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M60 110 Q120 140 180 110" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <circle cx="120" cy="95" r="10" fill="#34d399" opacity="0.6" />
-            <circle cx="145" cy="125" r="8" fill="#10b981" opacity="0.7" />
-          </svg>
-          <h3 style="color:#a7f3d0; margin-top:14px; font-size:1.15rem;">Hepatócitos Limpos & Ativos</h3>
-          <p style="font-size:0.85rem; max-width:320px; margin-top:6px; color:#d1fae5;">Ultrassom limpo, TGP abaixo de 25, metabolismo acelerado e disposição renovada.</p>
-        </div>
-
-        <!-- Handle Divisória Arrastável -->
-        <div class="slider-handle">
-          <div class="slider-handle-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-          </div>
-        </div>
-      </div>
-      
-      <p class="text-center text-muted" style="font-size:0.88rem;">👆 Dica: Clique ou arraste a bolinha dourada para o lado para ver o efeito da desintoxicação profunda.</p>
-    </div>
-  </section>
-
-  <!-- Depoimentos e Prova Social -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">RESULTADOS REAIS</span>
-        <h2 class="section-title">Quem aplicou o Manual do Fígado Magro já recuperou a saúde</h2>
-        <p class="section-desc">Veja o que dizem pessoas que eliminaram a esteatose hepática seguindo os 5 guias práticos:</p>
-      </div>
-
-      <div class="testimonials-grid">
+      <div class="results-grid">
         <!-- Depoimento 1 -->
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">
-            “No meu último ultrassom, o médico olhou a tela duas vezes sem acreditar: minha esteatose que era Grau 2 sumiu completamente! As receitas de almoço são maravilhosas e as bebidas funcionais desincharam minha barriga em 10 dias. Valeu cada centavo!”
+        <div class="result-card">
+          <div class="result-photo-wrap">
+            <img src="images/depoimento-foto-1.jpg" alt="Marcos Aurélio com o Manual do Fígado Magro" class="result-photo" loading="lazy">
+            <span class="result-photo-badge">Aluno Verificado ✓</span>
+          </div>
+          <div class="result-stars">★★★★★</div>
+          <p class="result-text">
+            “No meu último ultrassom, o médico conferiu a tela duas vezes: A gordura no fígado estava em Grau 3 e
+            sumiu completamente! As receitas de almoço são fáceis e as bebidas desincharam minha barriga em 10 dias.
+            Valeu cada centavo!”
           </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">MS</div>
-            <div class="author-info">
-              <h5>Marcos Aurélio Silveira, 54 anos</h5>
-              <span>São Paulo - SP · Esteatose Revertida</span>
+          <div class="result-author">
+            <div class="result-info">
+              <h5>Marcos Aurélio, 54 anos</h5>
             </div>
           </div>
         </div>
 
         <!-- Depoimento 2 -->
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">
-            “Eu acordava todos os dias com a boca amarga e sem energia. O guia de café da manhã e os exercícios fáceis de 10 minutos na sala mudaram a minha rotina. Hoje brinco com meus netos e durmo a noite toda sem sentir refluxo!”
+        <div class="result-card">
+          <div class="result-photo-wrap">
+            <img src="images/depoimento-foto-2.jpg" alt="Helena Miranda com o Manual do Fígado Magro" class="result-photo" loading="lazy">
+            <span class="result-photo-badge">Aluna Verificada ✓</span>
+          </div>
+          <div class="result-stars">★★★★★</div>
+          <p class="result-text">
+            “Eu acordava todos os dias com a boca amarga e sem energia. O guia de café da manhã e os exercícios fáceis
+            mudaram a minha rotina. Hoje durmo a noite inteira sem sentir o refluxo!”
           </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">HM</div>
-            <div class="author-info">
-              <h5>Helena Miranda, 61 anos</h5>
-              <span>Belo Horizonte - MG · Digestão 100% Leve</span>
+          <div class="result-author">
+            <div class="result-info">
+              <h5>Helena Miranda, 42 anos</h5>
             </div>
           </div>
         </div>
 
         <!-- Depoimento 3 -->
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">
-            “Meu TGP estava em 84 e o TGO em 76. Já estava apavorado com medo de cirrose. Apliquei os 5 guias do Manual do Fígado Magro e, ao repetir os exames de sangue após 3 semanas, as taxas normalizaram completamente. Recomendo de olhos fechados!”
+        <div class="result-card">
+          <div class="result-photo-wrap">
+            <img src="images/depoimento-foto-3.jpg" alt="Patrícia Ramos com o Manual do Fígado Magro" class="result-photo" loading="lazy">
+            <span class="result-photo-badge">Aluna Verificada ✓</span>
+          </div>
+          <div class="result-stars">★★★★★</div>
+          <p class="result-text">
+            “Meu TGP estava em 84 e o TGO em 76. Já estava apavorada com medo do fígado piorar. Usei os 5 guias do Manual
+            do Fígado Magro e quando repeti os exames depois de 3 semanas, as taxas normalizaram completamente.”
           </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">RC</div>
-            <div class="author-info">
-              <h5>Roberto Carlos Duarte, 49 anos</h5>
-              <span>Curitiba - PR · Exames Normalizados</span>
+          <div class="result-author">
+            <div class="result-info">
+              <h5>Patrícia Ramos, 48 anos</h5>
             </div>
           </div>
         </div>
@@ -1728,362 +1926,735 @@ body::before {
     </div>
   </section>
 
-  <!-- Future Pacing / Emocional -->
-  <section class="future-section">
-    <div class="container">
-      <div class="future-card">
-        <h3>Imagine acordar amanhã sabendo que seu fígado está sendo renovado...</h3>
-        <p>
-          Imagine acordar cedo com a cabeça leve, sem aquele cansaço sufocante que te acompanha há anos. Olhar no espelho e notar que aquele abdômen estufado e duro começou a murchar.
-        </p>
-        <p>
-          Sentar-se à mesa com sua família e saborear pratos deliciosos de café da manhã, almoço e janta, sem o medo paralisante de sentir azia, refluxo ou aquela fisgada incômoda no lado direito da costela.
-        </p>
-        <p>
-          E acima de tudo: marcar a próxima consulta médica com total tranquilidade. Entregar o novo laudo de ultrassom e ouvir o médico dizer: <em>"Seu fígado está perfeitamente limpo, desinflamado e saudável!"</em>
-        </p>
-        <ul class="future-list">
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Energia de sobra do amanhecer ao anoitecer
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Abdômen visivelmente mais leve e desinchado
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Digestão rápida e fim do refluxo noturno
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Sono profundo e reparador toda noite
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Exames de sangue dentro da faixa ideal
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Paz e tranquilidade para viver com saúde
-          </li>
-        </ul>
+  <!-- ==========================================================================
+       SEÇÃO 3: APRESENTANDO O MANUAL (DARK FOREST)
+       ========================================================================== -->
+  <section class="s48">
+    <div class="pres">
+      <div class="pres-head">
+        <p class="s78">Apresentando</p>
+        <h2 class="s79">Você recebe um passo a passo completo pra recomeçar.</h2>
+      </div>
+
+      <div class="pres-grid">
+        <figure class="pres-card">
+          <figcaption class="pres-label">01 / O MANUAL CENTRAL</figcaption>
+          <img loading="lazy" src="images/capa-mestre.jpg" alt="Manual do Fígado Magro" class="pres-img">
+        </figure>
+
+        <div class="pres-body">
+          <span class="pres-pill">PDF · 5 GUIAS INTEGRADOS</span>
+          <h3 class="pres-title">Manual do Fígado Magro</h3>
+          <p class="pres-sub">Abra o manual e descubra o plano exato para drenar a gordura visceral e regenerar suas
+            células hepáticas de forma natural.</p>
+          <ul class="pres-list">
+            <li>5 guias práticos, objetivos e fáceis de aplicar no dia a dia.</li>
+            <li>Cardápios completos de café da manhã, almoço e janta sem complicação.</li>
+            <li>Exercícios de 10 a 15 minutos em casa e bebidas de ação hepática profunda.</li>
+            <li>Plano estruturado de 21 dias para seguir no seu próprio ritmo.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SEÇÃO: PROVAS SOCIAIS EM PRINTS DE CONVERSAS (WHATSAPP)
+       ========================================================================== -->
+  <section class="prints-section">
+    <div class="s170">
+      <div class="s171">
+        <div>
+          <p class="s172">Depoimentos no WhatsApp</p>
+          <h2 class="s173">Mensagens reais de quem transformou o fígado.</h2>
+          <p class="prints-sub">Veja prints de conversas espontâneas enviadas por quem colocou o método em prática:</p>
+        </div>
+
+        <div class="carousel car2" data-autoplay="4000" aria-roledescription="carrossel" aria-label="Depoimentos de quem aplicou o Manual">
+          <div class="car-head">
+            <span class="car-hint">Toque para ampliar a conversa</span>
+            <div class="car-nav">
+              <button type="button" class="car-btn car-prev" aria-label="Anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M19 12H5"></path><path d="m11 6-6 6 6 6"></path>
+                </svg>
+              </button>
+              <span class="car-count" aria-live="polite">1 de 3</span>
+              <button type="button" class="car-btn car-next" aria-label="Próximo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="s94 car-track">
+            <!-- Print 1: Cláudia Rocha -->
+            <div class="s174">
+              <img loading="lazy" src="images/print-whatsapp-1.svg" alt="Conversa de WhatsApp com Cláudia Rocha relatando regressão de esteatose grau 2" class="s175">
+              <p class="s176">“Minha gordura caiu de GRAU 2 pra leve em só 21 dias de manual!”</p>
+              <div class="s177">
+                <div class="s178">
+                  <strong class="s179">Cláudia Rocha</strong>
+                  <span class="s180">Aluna · 21 dias de método</span>
+                </div>
+                <a href="images/print-whatsapp-1.svg" class="s181" aria-label="Ampliar conversa de Cláudia Rocha">
+                  Ampliar conversa
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path><path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Print 2: Marcos Vinícius -->
+            <div class="s174">
+              <img loading="lazy" src="images/print-whatsapp-2.svg" alt="Conversa de WhatsApp com Marcos Vinícius mostrando exames TGO e TGP normalizados" class="s175">
+              <p class="s176">“TGO caiu de 84 pra 26 e TGP de 92 pra 29... Tudo dentro do normal!”</p>
+              <div class="s177">
+                <div class="s178">
+                  <strong class="s179">Marcos Vinícius</strong>
+                  <span class="s180">Aluno · Exames normalizados</span>
+                </div>
+                <a href="images/print-whatsapp-2.svg" class="s181" aria-label="Ampliar conversa de Marcos Vinícius">
+                  Ampliar conversa
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path><path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Print 3: Dona Neide -->
+            <div class="s174">
+              <img loading="lazy" src="images/print-whatsapp-3.svg" alt="Conversa de WhatsApp com Dona Neide relatando digestão leve e 5kg a menos" class="s175">
+              <p class="s176">“Com 3 semanas minha digestão mudou 100% e desinchei 5kg!”</p>
+              <div class="s177">
+                <div class="s178">
+                  <strong class="s179">Dona Neide Silveira</strong>
+                  <span class="s180">58 anos · Adeus estufamento</span>
+                </div>
+                <a href="images/print-whatsapp-3.svg" class="s181" aria-label="Ampliar conversa de Dona Neide">
+                  Ampliar conversa
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17 17 7"></path><path d="M8 7h9v9"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Ação inferior -->
+      <div class="s182">
+        <span class="s183">🛡️ Acesso Imediato · Garantia Incondicional de 7 Dias</span>
+        <a href="#oferta" class="s184">
+          <span>Quero Derreter a Gordura no Fígado</span>
+          <span class="s185">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       SEÇÃO DA OFERTA IRRESISTÍVEL COM OS 5 PRODUTOS NO STACK
+       VITRINE DOS 5 PRODUTOS COM SUAS CAPAS OFICIAIS
        ========================================================================== -->
-  <section class="offer-section" id="oferta">
-    <div class="container">
-      <div class="offer-card">
-        <span class="offer-ribbon">CONDIÇÃO ESPECIAL DE LANÇAMENTO</span>
-
-        <div class="countdown-box">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          Esta condição especial encerra em: <span class="timer-digits" id="countdown-timer">15:00</span>
-        </div>
-
-        <h3 style="font-size:1.65rem; color:#fff; font-weight:800; margin-bottom:10px;">
-          Coleção Completa: Manual do Fígado Magro
-        </h3>
-        <p style="color:var(--text-secondary); font-size:0.95rem;">
-          Você recebe os 5 Manuais Práticos de acesso vitalício imediato no celular, tablet ou computador:
-        </p>
-
-        <!-- Stack de Valor com os 5 Materiais -->
-        <div class="offer-stack">
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              Manual do Fígado Magro (Guia Mestre Central)
-            </span>
-            <span class="value-strike">R$ 97,00</span>
-          </div>
-
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              1º Guia Prático: Café da Manhã Anti-Gordura
-            </span>
-            <span class="value-strike">R$ 47,00</span>
-          </div>
-
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              2º Guia Prático: Almoço Desintoxicante
-            </span>
-            <span class="value-strike">R$ 47,00</span>
-          </div>
-
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              3º Guia Prático: Janta Leve & Reparadora
-            </span>
-            <span class="value-strike">R$ 47,00</span>
-          </div>
-
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              4º Guia Prático: Exercícios para Fazer em Casa
-            </span>
-            <span class="value-strike">R$ 47,00</span>
-          </div>
-
-          <div class="offer-stack-item">
-            <span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              5º Guia Prático: Bebidas para Derreter a Gordura no Fígado
-            </span>
-            <span class="value-strike">R$ 67,00</span>
-          </div>
-        </div>
-
-        <!-- Preço em Destaque -->
-        <div class="pricing-box">
-          <p class="price-was">Valor Total Separado: <span>R$ 352,00</span></p>
-          <div class="price-now">
-            <small>R$</small> 47<small>,90</small>
-          </div>
-          <p class="price-installments">ou até 5x de R$ 10,48 no cartão de crédito</p>
-          <p style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">Pagamento Único · Acesso Vitalício · Sem cobranças adicionais</p>
-        </div>
-
-        <div style="margin-top:20px;">
-          <!-- Substitua o link pelo link do seu checkout (Kiwify, Hotmart, Eduzz, Braip, etc.) -->
-          <a href="https://pay.hotmart.com/" target="_blank" rel="noopener" class="btn-cta" style="width:100%;">
-            <span>SIM! QUERO O MANUAL DO FÍGADO MAGRO</span>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-        </div>
-
-        <!-- Formas de Pagamento Seguras -->
-        <div style="margin-top:20px; display:flex; justify-content:center; align-items:center; gap:16px; flex-wrap:wrap; opacity:0.85;">
-          <span style="font-size:0.8rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            PIX Imediato
-          </span>
-          <span style="font-size:0.8rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            Cartão de Crédito
-          </span>
-          <span style="font-size:0.8rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            Criptografia 256-Bit SSL
-          </span>
-        </div>
+  <section class="bundle-showcase-section">
+    <div class="s90">
+      <div>
+        <h2 class="s91">O QUE VOCÊ VAI RECEBER</h2>
+        <p class="s91-sub">Materiais completos e independentes que você recebe hoje no combo:</p>
       </div>
 
-      <!-- Caixa de Garantia Blindada -->
-      <div class="guarantee-box">
-        <div class="guarantee-badge-img">
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="46" fill="#063d27" stroke="#d4af37" stroke-width="3"/>
-            <circle cx="50" cy="50" r="38" fill="none" stroke="#d4af37" stroke-dasharray="4 3" stroke-width="1.5"/>
-            <text x="50" y="46" fill="#f7e7a9" font-size="20" font-weight="900" text-anchor="middle" font-family="Arial">7</text>
-            <text x="50" y="60" fill="#f7e7a9" font-size="10" font-weight="bold" text-anchor="middle" font-family="Arial">DIAS</text>
-            <text x="50" y="74" fill="#34d399" font-size="7" font-weight="bold" text-anchor="middle" font-family="Arial">GARANTIA</text>
-          </svg>
+      <div class="bundle-grid">
+        <!-- 1: Café da Manhã -->
+        <div class="bundle-card">
+          <span class="bundle-card-badge">Volume 1 · Manhã</span>
+          <div class="bundle-card-img-wrap">
+            <img src="images/cafe-da-manha.jpg" alt="Café da Manhã" class="bundle-card-img" loading="lazy">
+          </div>
+          <h3 class="bundle-card-title">1º Café da Manhã</h3>
+          <p class="bundle-card-desc">Receitas rápidas de 5 a 10 minutos que ativam a queima de gordura logo ao acordar, sem picos de glicose e sem pães refinados.</p>
+          <ul class="bundle-card-highlights">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Sem farinhas brancas ou açúcares
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Preparo rápido de 5 a 10 minutos
+            </li>
+          </ul>
         </div>
-        <div class="guarantee-text">
-          <h4>Garantia Blindada de Satisfação Total por 7 Dias</h4>
-          <p>
-            Você não assume risco nenhum. Experimente o <strong>Manual do Fígado Magro</strong> com todos os 5 guias práticos durante 7 dias completos. Se você não notar digestão mais rápida, menos inchaço e muito mais disposição, basta enviar uma mensagem e nós devolveremos 100% do seu dinheiro. Sem burocracia e sem ressentimentos.
-          </p>
+
+        <!-- 2: Almoço -->
+        <div class="bundle-card">
+          <span class="bundle-card-badge">Volume 2 · Tarde</span>
+          <div class="bundle-card-img-wrap">
+            <img src="images/almoco.jpg" alt="Almoço" class="bundle-card-img" loading="lazy">
+          </div>
+          <h3 class="bundle-card-title">2º Almoço</h3>
+          <p class="bundle-card-desc">Receitas rápidas de serem feitas e saborosas que vão ajudar a reduzir a gordura no fígado.</p>
+          <ul class="bundle-card-highlights">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Pratos saborosos e rápidos de fazer
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Ajuda a reduzir a gordura no fígado
+            </li>
+          </ul>
+        </div>
+
+        <!-- 3: Janta -->
+        <div class="bundle-card">
+          <span class="bundle-card-badge">Volume 3 · Noite</span>
+          <div class="bundle-card-img-wrap">
+            <img src="images/janta.jpg" alt="Receitas de Janta" class="bundle-card-img" loading="lazy">
+          </div>
+          <h3 class="bundle-card-title">3º Receitas de Janta</h3>
+          <p class="bundle-card-desc">Refeições noturnas que não pesam no estômago e preparam o fígado para o ciclo biológico de regeneração celular profunda na madrugada.</p>
+          <ul class="bundle-card-highlights">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Refeições leves que não pesam à noite
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Ciclo de regeneração celular profunda
+            </li>
+          </ul>
+        </div>
+
+        <!-- 4: Exercícios -->
+        <div class="bundle-card">
+          <span class="bundle-card-badge">Volume 4 · Movimento</span>
+          <div class="bundle-card-img-wrap">
+            <img src="images/exercicios.jpg" alt="Exercícios para Fazer em Casa" class="bundle-card-img" loading="lazy">
+          </div>
+          <h3 class="bundle-card-title">4º Exercícios para Fazer em Casa</h3>
+          <p class="bundle-card-desc">Roteiros de 10 a 15 minutos de baixo impacto para fazer na sala, sem pesos nem aparelhos.</p>
+          <ul class="bundle-card-highlights">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Roteiros de 10 a 15 minutos de baixo impacto
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Para fazer na sala, sem pesos nem aparelhos
+            </li>
+          </ul>
+        </div>
+
+        <!-- 5: Bebidas -->
+        <div class="bundle-card">
+          <span class="bundle-card-badge">Volume 5 · Detox</span>
+          <div class="bundle-card-img-wrap">
+            <img src="images/bebidas.jpg" alt="Bebidas para Derreter a Gordura no Fígado" class="bundle-card-img"
+              loading="lazy">
+          </div>
+          <h3 class="bundle-card-title">5º Bebidas para Derreter a Gordura no Fígado</h3>
+          <p class="bundle-card-desc">Bebidas preparadas especificamente para atingir a gordura grudada no fígado e derretê-la em 21 dias.</p>
+          <ul class="bundle-card-highlights">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Atinge a gordura grudada no fígado
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Derrete a gordura em até 21 dias
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Perguntas Frequentes (FAQ) -->
-  <section class="faq-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">TIRE SUAS DÚVIDAS</span>
-        <h2 class="section-title">Perguntas Frequentes</h2>
-        <p class="section-desc">Tudo o que você precisa saber sobre o Manual do Fígado Magro:</p>
+  <!-- ==========================================================================
+       SEÇÃO 5: SLIDER ANTES & DEPOIS (DARK FOREST)
+       ========================================================================== -->
+  <section class="compare-section">
+    <div class="s90">
+      <div>
+        <h2 class="s91" style="color:#FFFFFF;">Veja a transformação no seu organismo</h2>
+        <p class="s91-sub" style="color:#B4CCC0;">Arraste a linha dourada para comparar um fígado inflamado com um
+          fígado regenerado pelo método:</p>
       </div>
 
-      <div class="faq-list">
+      <div class="slider-container">
+        <!-- Antes -->
+        <div class="slider-img before">
+          <span class="slider-tag before-tag">Antes: Fígado Inflamado (Grau 2/3)</span>
+          <svg class="slider-svg" viewBox="0 0 240 180" fill="none" aria-hidden="true">
+            <path d="M40 70 C50 30 130 20 180 50 C210 70 220 110 200 140 C170 170 90 175 50 160 C30 145 20 100 40 70 Z"
+              fill="#693b2a" stroke="#d97706" stroke-width="3" />
+            <circle cx="80" cy="80" r="12" fill="#fbbf24" opacity="0.8" />
+            <circle cx="120" cy="70" r="16" fill="#f59e0b" opacity="0.9" />
+            <circle cx="150" cy="100" r="14" fill="#fbbf24" opacity="0.8" />
+            <circle cx="95" cy="120" r="15" fill="#f59e0b" opacity="0.9" />
+            <circle cx="160" cy="130" r="10" fill="#fbbf24" opacity="0.7" />
+          </svg>
+          <h3 style="color:#FFB4A2;">Gordura acumulada no Fígado</h3>
+          <p style="color:#FECACA;">Cansaço constante, barriga inchada, problemas de digestão e etc..</p>
+        </div>
+
+        <!-- Depois -->
+        <div class="slider-img after">
+          <span class="slider-tag after-tag">Depois: Fígado Magro & Regenerado</span>
+          <svg class="slider-svg" viewBox="0 0 240 180" fill="none" aria-hidden="true">
+            <path d="M40 70 C50 30 130 20 180 50 C210 70 220 110 200 140 C170 170 90 175 50 160 C30 145 20 100 40 70 Z"
+              fill="#0d5c3f" stroke="#34d399" stroke-width="3" />
+            <path d="M70 80 Q120 60 170 80" stroke="#a7f3d0" stroke-width="3" stroke-linecap="round" fill="none" />
+            <path d="M60 110 Q120 140 180 110" stroke="#6ee7b7" stroke-width="3" stroke-linecap="round" fill="none" />
+            <circle cx="120" cy="95" r="10" fill="#34d399" opacity="0.6" />
+          </svg>
+          <h3 style="color:#A7F3D0;">Fígado limpo</h3>
+          <p style="color:#D1FAE5;">Disposição, vitalidade, sem sensação de inchaço, disgestão regulada.</p>
+        </div>
+
+        <div class="slider-handle">
+          <div class="slider-handle-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              aria-hidden="true">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align:center; font-size:13px; color:#8CA397; margin:0;">👆 Toque ou arraste o círculo dourado para
+        comparar.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO 6: BÔNUS EXCLUSIVOS (LIGHT CREAM)
+       ========================================================================== -->
+  <section class="bonuses-section">
+    <div class="s90">
+      <div>
+        <h2 class="s91">Comprando hoje</h2>
+        <p class="s91-sub">Você ainda leva 3 presentes exclusivos inclusos sem custo adicional:</p>
+      </div>
+
+      <div class="bonuses-grid">
+        <!-- Bônus 1: CARDÁPIO PARA 30 DIAS -->
+        <div class="bonus-card">
+          <span class="bonus-badge">Bônus #1 · Exclusivo</span>
+          <div class="bonus-img-wrap">
+            <img src="images/bonus-cardapio-30dias.jpg" alt="1º Bônus: Cardápio para 30 Dias" class="bonus-img" loading="lazy">
+          </div>
+          <h4>1º Bônus: Cardápio para 30 Dias</h4>
+          <p>Planner alimentar completo organizado do 1º ao 30º dia. São 90 receitas equilibradas para café da manhã, almoço, janta e bebida do dia. Basta seguir a ordem dos dias, sem precisar escolher nada.</p>
+          <div class="bonus-price"><span class="strike">De R$ 37,90</span> por <span class="free">GRÁTIS</span></div>
+        </div>
+
+        <!-- Bônus 2: Sobremesas Sem Açúcar -->
+        <div class="bonus-card">
+          <span class="bonus-badge">Bônus #2 · Exclusivo</span>
+          <div class="bonus-img-wrap">
+            <img src="images/bonus-sobremesas.jpg" alt="2º Bônus: Sobremesas Sem Açúcar" class="bonus-img" loading="lazy">
+          </div>
+          <h4>2º Bônus: Sobremesas Sem Açúcar</h4>
+          <p>Doces, cremes e sobremesas deliciosas desenvolvidas especificamente para quem tem gordura no fígado, matando a vontade de doce sem elevar a glicose e sem inflamar as células hepáticas.</p>
+          <div class="bonus-price"><span class="strike">De R$ 29,90</span> por <span class="free">GRÁTIS</span></div>
+        </div>
+
+        <!-- Bônus 3: Guia Alimentos a Evitar -->
+        <div class="bonus-card">
+          <span class="bonus-badge">Bônus #3 · Exclusivo</span>
+          <div class="bonus-img-wrap">
+            <img src="images/bonus-alimentos-evitar.jpg" alt="3º Bônus: Guia Alimentos a Evitar" class="bonus-img" loading="lazy">
+          </div>
+          <h4>3º Bônus: Guia Alimentos a Evitar</h4>
+          <p>O mapa prático com todos os alimentos e ingredientes que sabotam o fígado em silêncio. Saiba exatamente o que riscar do seu cardápio para acelerar a queima de gordura hepática.</p>
+          <div class="bonus-price"><span class="strike">De R$ 27,90</span> por <span class="free">GRÁTIS</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO 8: COMO VOCÊ RECEBE (DARK FOREST)
+       ========================================================================== -->
+  <section class="s186">
+    <div class="s90">
+      <h2 class="s91" style="color:#FFFFFF;">Como você recebe</h2>
+
+      <div class="s187">
+        <div class="s188">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+          </svg>
+          <h3 class="s189">E-book</h3>
+          <p class="s88">Conteúdo direto ao ponto, pra ler e já colocar em prática no mesmo dia.</p>
+        </div>
+
+        <div class="s188">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="2" width="12" height="20" rx="2"></rect>
+            <path d="M11 18h2"></path>
+          </svg>
+          <h3 class="s189">Lê no celular</h3>
+          <p class="s88">Abre no smartphone, tablet ou computador. Dá pra imprimir se quiser.</p>
+        </div>
+
+        <div class="s188">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+          <h3 class="s189">Acesso imediato</h3>
+          <p class="s88">Chega no seu e-mail e WhatsApp assim que o pagamento é confirmado.</p>
+        </div>
+
+        <div class="s188">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h3 class="s189">100% natural</h3>
+          <p class="s88">Ingredientes simples e acessíveis, feitos no conforto da sua própria cozinha.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO 9: CALLOUT INTERMEDIÁRIO (LIGHT CREAM)
+       ========================================================================== -->
+  <section class="callout-section">
+    <div class="callout-box">
+      <h2 class="callout-h">Cabe na palma da sua mão. E muda a saúde de todo o seu organismo.</h2>
+      <p class="callout-desc">
+        Você lê no intervalo do almoço, no transporte ou antes de dormir. O método é direto, sem enrolação, e foi feito
+        para caber perfeitamente na rotina de quem tem pouco tempo.
+      </p>
+      <a href="#oferta" class="s9">Quero o meu manual</a>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO 11: OFERTA PRINCIPAL (CARD BRANCO ESTILO ESPOSA DESEJADA)
+       ========================================================================== -->
+  <section id="oferta" class="s81">
+    <div class="s213">
+      <h2 class="s214">Pronto para ter um fígado magro e saudável?</h2>
+
+      <img loading="lazy" src="images/capa-mestre.jpg" alt="Coleção Completa: Manual do Fígado Magro" class="offer-img">
+
+      <div class="s246">
+        <div class="s247"><span>Manual do Fígado Magro (Guia Mestre)</span><span class="s248">R$ 97,00</span></div>
+        <div class="s247"><span>1º Guia: Café da Manhã</span><span class="s248">R$ 47,00</span></div>
+        <div class="s247"><span>2º Guia: Almoço</span><span class="s248">R$ 47,00</span></div>
+        <div class="s247"><span>3º Guia: Receitas de Janta</span><span class="s248">R$ 47,00</span></div>
+        <div class="s247"><span>4º Guia: Exercícios para Fazer em Casa</span><span class="s248">R$ 47,00</span></div>
+        <div class="s247"><span>5º Guia: Bebidas para Derreter a Gordura</span><span class="s248">R$ 67,00</span></div>
+        <div class="s247"><span>Bônus 1: Cardápio para 30 Dias</span><span class="s248">R$ 37,90</span></div>
+        <div class="s247"><span>Bônus 2: Sobremesas Sem Açúcar</span><span class="s248">R$ 29,90</span></div>
+        <div class="s247"><span>Bônus 3: Guia Alimentos a Evitar</span><span class="s248">R$ 27,90</span></div>
+        <div class="s249"><span>Valor total separado</span><span class="s250">R$ 447,70</span></div>
+      </div>
+
+      <div class="s251">
+        <span class="s252">Hoje, tudo isso por apenas</span>
+        <span class="s253">R$ 47,90</span>
+        <span class="s254">à vista no PIX ou até 5x de R$ 10,48 no cartão</span>
+      </div>
+
+      <a href="#checkout" class="s255">Quero meu manual + bônus</a>
+
+      <div class="s256">
+        <span>PIX, boleto ou cartão</span><span>·</span><span>Acesso imediato</span><span>·</span><span>Garantia de 7
+          dias</span>
+      </div>
+    </div>
+
+    <!-- Garantia Blindada -->
+    <div class="guarantee-wrap">
+      <div class="guarantee-badge">
+        7
+        <small>DIAS</small>
+      </div>
+      <div class="guarantee-text">
+        <h4>Garantia Incondicional de 7 Dias</h4>
+        <p>
+          Você não assume risco nenhum. Experimente o <strong>Manual do Fígado Magro</strong> por 7 dias completos. Se
+          não notar digestão mais leve, menos inchaço e muito mais disposição, basta nos enviar um e-mail e devolveremos
+          100% do seu dinheiro. Sem burocracia e sem perguntas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SEÇÃO 13: PERGUNTAS FREQUENTES (FAQ COM ÍCONE CIRCULAR ROTATIVO)
+       ========================================================================== -->
+  <section class="s81" style="background:#FFFFFF; border-top:1px solid #DCE7E1;">
+    <div class="s289">
+      <div class="s290">
+        <h2 class="s291">Perguntas frequentes</h2>
+      </div>
+
+      <div class="s293">
         <!-- FAQ 1 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>O que exatamente vou receber ao adquirir o Manual do Fígado Magro?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="true">
+            <span>O que exatamente vou receber ao comprar o manual?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Você recebe acesso vitalício e imediato à coleção completa: o <strong>Manual do Fígado Magro (Guia Mestre)</strong> junto com os 5 Manuais Práticos: 1º Café da Manhã Anti-Gordura, 2º Almoço Desintoxicante, 3º Janta Leve & Reparadora, 4º Exercícios para Fazer em Casa e 5º Bebidas para Derreter a Gordura no Fígado. Tudo em formato digital otimizado para celulares, tablets e computadores, pronto para ler ou imprimir.</p>
+          <div class="faq-a">
+            <p>Você recebe acesso instantâneo ao e-book central <strong>Manual do Fígado Magro</strong> mais os 5
+              Manuais Práticos: 1º Café da Manhã Anti-Gordura, 2º Almoço Desintoxicante, 3º Janta Leve & Reparadora, 4º
+              Exercícios para Fazer em Casa e 5º Bebidas para Derreter a Gordura, além dos 3 bônus exclusivos. Tudo em
+              formato digital otimizado para celulares, tablets e computadores.</p>
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
+          <button type="button" class="faq-q" aria-expanded="false">
             <span>As receitas são fáceis e com ingredientes baratos?</span>
-            <span class="faq-icon">+</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Sim! Não usamos nenhum ingrediente caro, importado ou difícil de achar. São receitas pensadas para o bolso do brasileiro, com alimentos simples encontrados em qualquer feira de bairro ou supermercado comum.</p>
+          <div class="faq-a" hidden>
+            <p>Sim! Não usamos nenhum ingrediente caro, importado ou difícil de achar. São receitas pensadas para o
+              bolso comum, com alimentos simples encontrados em qualquer feira livre ou supermercado de bairro.</p>
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Preciso de equipamentos de academia para fazer os exercícios?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="false">
+            <span>Preciso de equipamentos para fazer os exercícios?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Não! O guia de exercícios foi criado para quem quer praticar no conforto de casa, sem pesos e sem aparelhos. São sequências fáceis de 10 a 15 minutos que respeitam as suas articulações e aceleram a circulação para queimar gordura visceral.</p>
+          <div class="faq-a" hidden>
+            <p>Não! Os exercícios foram elaborados especificamente para serem feitos no chão da sala, sem pesos, sem
+              esteira e sem mensalidade de academia. São sequências fáceis de 10 a 15 minutos que respeitam as suas
+              articulações.</p>
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Funciona para quem tem Esteatose Hepática Grau 1, 2 ou 3?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="false">
+            <span>Funciona para gordura no fígado Grau 1, 2 e 3?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Sim! O método atua na raiz do acúmulo de gordura hepática. Nos graus 1 e 2, a desinflamação costuma ser extremamente rápida. No grau 3, o protocolo atua freando o avanço da esteato-hepatite e auxiliando os hepatócitos a se regenerarem.</p>
+          <div class="faq-a" hidden>
+            <p>Sim! O método atua na raiz do acúmulo de triglicerídeos no fígado. Nos graus 1 e 2, os resultados
+              costumam ser muito rápidos. No grau 3, o protocolo atua freando o avanço inflamatório e auxiliando na
+              regeneração das células hepáticas.</p>
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Em quanto tempo começo a notar resultados no meu corpo?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="false">
+            <span>Em quanto tempo começo a notar resultados?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>A maioria das pessoas relata um alívio impressionante no inchaço da barriga, na digestão e na azia logo nos primeiros 5 a 7 dias. O ciclo de 21 dias é o período recomendado para consolidação da renovação celular e melhora nas taxas laboratoriais.</p>
+          <div class="faq-a" hidden>
+            <p>A maioria das pessoas relata um alívio impressionante no inchaço da barriga, na digestão pesada e no
+              cansaço logo nos primeiros 5 a 7 dias. O ciclo de 21 dias consolida a desintoxicação profunda e melhora as
+              taxas laboratoriais.</p>
           </div>
         </div>
 
         <!-- FAQ 6 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Como vou receber o meu acesso?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="false">
+            <span>Como recebo e por quanto tempo tenho acesso?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Assim que o seu pagamento for aprovado (no PIX ou Cartão é liberado em menos de 1 minuto), você receberá um e-mail com os dados de acesso exclusivos para baixar todo o material na hora.</p>
+          <div class="faq-a" hidden>
+            <p>Assim que o pagamento for aprovado (no PIX ou Cartão é liberado em menos de 1 minuto), você receberá um
+              e-mail com os dados de acesso imediatos. O acesso é vitalício e você pode baixar no seu celular para
+              consultar quando quiser.</p>
           </div>
         </div>
 
         <!-- FAQ 7 -->
         <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>E se eu achar que o material não é para mim?</span>
-            <span class="faq-icon">+</span>
+          <button type="button" class="faq-q" aria-expanded="false">
+            <span>E se eu não gostar?</span>
+            <span class="faq-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14"></path>
+                <path d="M5 12h14"></path>
+              </svg></span>
           </button>
-          <div class="faq-answer">
-            <p>Você tem 7 dias completos de garantia incondicional. Se não ficar totalmente satisfeito com as receitas e exercícios, basta enviar um e-mail e devolveremos 100% do seu investimento sem fazer perguntas.</p>
+          <div class="faq-a" hidden>
+            <p>Você tem 7 dias completos de garantia incondicional. Se não gostar do material por qualquer motivo, basta
+              nos enviar um e-mail dentro desse prazo e devolveremos 100% do valor pago. Sem perguntas.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Rodapé & Compliance -->
+  <!-- ==========================================================================
+       RODAPÉ (DARK FOREST)
+       ========================================================================== -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-logo">MANUAL DO FÍGADO MAGRO</div>
-      <p style="color:var(--text-secondary); max-width:600px; margin:0 auto 15px;">
-        O método prático integrado de alimentação, exercícios caseiros e bebidas funcionais para restaurar a saúde do seu fígado.
-      </p>
+    <div class="footer-brand">MANUAL DO FÍGADO MAGRO</div>
+    <p class="footer-desc">
+      O método prático integrado de alimentação funcional, exercícios caseiros e bebidas desintoxicantes para restaurar
+      a saúde do seu fígado.
+    </p>
 
-      <div class="footer-disclaimer">
-        <strong>Aviso Médico & Legal:</strong> Este produto contém conteúdo informativo e educacional sobre saúde natural e estilo de vida. As informações contidas aqui não devem ser utilizadas como substituto de diagnósticos, conselhos médicos ou tratamentos prescritos por profissionais de saúde. Consulte sempre seu médico antes de realizar alterações drásticas na sua rotina de saúde. Os resultados podem variar de pessoa para pessoa.
-      </div>
+    <div class="footer-disclaimer">
+      <strong>Aviso Legal & Médico:</strong> Este produto contém conteúdo informativo e educacional sobre saúde natural
+      e nutrição. As informações contidas aqui não substituem consultas, diagnósticos ou tratamentos médicos com
+      profissionais qualificados. Os resultados podem variar de acordo com o metabolismo e a constância de cada pessoa.
+    </div>
 
-      <div class="footer-links">
-        <a href="#termos">Termos de Uso</a>
-        <span>·</span>
-        <a href="#privacidade">Políticas de Privacidade</a>
-        <span>·</span>
-        <a href="#contato">Suporte ao Cliente</a>
-      </div>
-
-      <p style="margin-top:20px; font-size:0.75rem; color:#475569;">
-        © 2026 Manual do Fígado Magro. Todos os direitos reservados.<br>
-        Este site não é afiliado ao Facebook, Google, Meta Platforms, Inc. ou a qualquer uma de suas entidades.
-      </p>
+    <div class="footer-copy">
+      © 2026 Manual do Fígado Magro · Todos os direitos reservados.
     </div>
   </footer>
 
-  <!-- Barra Flutuante Fixa de Conversão Mobile (Sticky Bar) -->
+  <!-- Barra Flutuante Mobile Fixa (Sticky Bar) -->
   <div class="sticky-bar">
     <div class="sticky-info">
-      <span class="sticky-title">Manual do Fígado Magro (5 em 1)</span>
-      <span class="sticky-price">R$ 47,90 <span style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">à vista</span></span>
+      <span class="sticky-title">Manual do Fígado Magro</span>
+      <span class="sticky-price">R$ 47,90 <span style="font-size:11px; color:#A3BFB2; font-weight:normal;">à
+          vista</span></span>
     </div>
-    <a href="#oferta" class="sticky-btn">Quero Meu Acesso</a>
-  </div>
-
-  <!-- Toast Notificação de Vendas em Tempo Real -->
-  <div class="live-toast">
-    <div class="toast-avatar">M</div>
-    <div>
-      <div class="toast-text"><strong class="toast-name">Maria C.</strong> (<span class="toast-city">São Paulo - SP</span>) acabou de adquirir o Manual do Fígado Magro!</div>
-      <div class="toast-time">Há 3 minutos · Compra Verificada</div>
-    </div>
+    <a href="#oferta" class="sticky-btn">Garantir Acesso</a>
   </div>
 
   <script>
-/* ==========================================================================
-   PROTOCOLO FÍGADO LIMPO - INTERATIVIDADE & CONVERSÃO
-   ========================================================================== */
+// ==========================================================================
+// MANUAL DO FÍGADO MAGRO — SCRIPT OFICIAL DE ALTA CONVERSÃO
+// ==========================================================================
+
+// 1) Cole aqui o link direto do seu checkout (Kiwify, Hotmart, Eduzz, Braip, etc.).
+// Os botões da oferta passam a apontar diretamente para ele:
+const CHECKOUT_URL = '';
 
 document.addEventListener('DOMContentLoaded', () => {
-  initCountdownTimer();
+  // 1. Atualizar links de checkout
+  if (CHECKOUT_URL) {
+    document.querySelectorAll('a[href="#checkout"]').forEach((a) => {
+      a.href = CHECKOUT_URL;
+      a.target = '_blank';
+      a.rel = 'noopener';
+    });
+  }
+
+  // 2. FAQ Accordion (Abre uma pergunta por vez, com rotação suave do ícone)
+  const items = document.querySelectorAll('.faq-item');
+  items.forEach((item) => {
+    const btn = item.querySelector('.faq-q');
+    const ans = item.querySelector('.faq-a');
+    if (!btn || !ans) return;
+
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      items.forEach((other) => {
+        const otherBtn = other.querySelector('.faq-q');
+        const otherAns = other.querySelector('.faq-a');
+        if (otherBtn && otherAns) {
+          otherBtn.setAttribute('aria-expanded', 'false');
+          otherAns.hidden = true;
+        }
+      });
+      if (!open) {
+        btn.setAttribute('aria-expanded', 'true');
+        ans.hidden = false;
+      }
+    });
+  });
+
+  // 3. Slider Interativo Antes & Depois (Fígado Gorduroso vs. Fígado Regenerado)
   initBeforeAfterSlider();
-  initFaqAccordion();
+
+  // 4. Barra Fixa Mobile Flutuante (Sticky Bar)
   initStickyBar();
-  initLiveSalesNotification();
+
+  // 5. Rolagem Suave
   initSmoothScroll();
+
+  // 6. Carrossel de Prints de Conversas (WhatsApp)
+  initPrintsCarousel();
+
+  // 7. Lightbox para ampliar conversa
+  initLightbox();
 });
 
 /* --------------------------------------------------------------------------
-   1. CONTADOR REGRESSIVO DE ESCASSEZ (15:00)
-   -------------------------------------------------------------------------- */
-function initCountdownTimer() {
-  const timerDisplay = document.getElementById('countdown-timer');
-  if (!timerDisplay) return;
-
-  let totalSeconds = 15 * 60; // 15 minutos
-
-  // Tenta recuperar tempo salvo na sessão
-  const savedTime = sessionStorage.getItem('liver_timer_seconds');
-  if (savedTime && parseInt(savedTime, 10) > 0) {
-    totalSeconds = parseInt(savedTime, 10);
-  }
-
-  const updateTimer = () => {
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-
-    timerDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-
-    if (totalSeconds > 0) {
-      totalSeconds--;
-      sessionStorage.setItem('liver_timer_seconds', totalSeconds);
-    } else {
-      // Reinicia sutilmente em 5 minutos quando zera para manter urgência contínua
-      totalSeconds = 5 * 60;
-    }
-  };
-
-  updateTimer();
-  setInterval(updateTimer, 1000);
-}
-
-/* --------------------------------------------------------------------------
-   2. SLIDER INTERATIVO ANTES & DEPOIS (FÍGADO GORDUROSO vs REGENERADO)
+   SLIDER INTERATIVO ANTES & DEPOIS (MOUSE & TOUCH)
    -------------------------------------------------------------------------- */
 function initBeforeAfterSlider() {
   const container = document.querySelector('.slider-container');
@@ -2094,13 +2665,13 @@ function initBeforeAfterSlider() {
 
   let isDragging = false;
 
-  const setSliderPosition = (xPos) => {
+  const setSliderPosition = (clientX) => {
     const rect = container.getBoundingClientRect();
-    let offsetX = xPos - rect.left;
+    let offsetX = clientX - rect.left;
 
-    // Limites de 5% a 95%
-    if (offsetX < rect.width * 0.05) offsetX = rect.width * 0.05;
-    if (offsetX > rect.width * 0.95) offsetX = rect.width * 0.95;
+    // Limites de 4% a 96%
+    if (offsetX < rect.width * 0.04) offsetX = rect.width * 0.04;
+    if (offsetX > rect.width * 0.96) offsetX = rect.width * 0.96;
 
     const percentage = (offsetX / rect.width) * 100;
     handle.style.left = `${percentage}%`;
@@ -2108,69 +2679,67 @@ function initBeforeAfterSlider() {
   };
 
   // Mouse Events
-  handle.addEventListener('mousedown', () => (isDragging = true));
-  window.addEventListener('mouseup', () => (isDragging = false));
+  handle.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    isDragging = true;
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
   container.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
     setSliderPosition(e.clientX);
   });
 
-  // Touch Events (Mobile)
-  handle.addEventListener('touchstart', () => (isDragging = true), { passive: true });
-  window.addEventListener('touchend', () => (isDragging = false));
-  container.addEventListener('touchmove', (e) => {
-    if (!isDragging || !e.touches[0]) return;
-    setSliderPosition(e.touches[0].clientX);
-  }, { passive: true });
-
-  // Clique direto no container para mover
   container.addEventListener('click', (e) => {
     setSliderPosition(e.clientX);
   });
+
+  // Touch Events (Mobile)
+  const onTouchStart = (e) => {
+    isDragging = true;
+    if (e.touches && e.touches[0]) {
+      setSliderPosition(e.touches[0].clientX);
+    }
+  };
+
+  const onTouchMove = (e) => {
+    if (!isDragging || !e.touches || !e.touches[0]) return;
+    if (e.cancelable) {
+      e.preventDefault();
+    }
+    setSliderPosition(e.touches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    isDragging = false;
+  };
+
+  handle.addEventListener('touchstart', onTouchStart, { passive: true });
+  container.addEventListener('touchstart', onTouchStart, { passive: true });
+  window.addEventListener('touchmove', onTouchMove, { passive: false });
+  window.addEventListener('touchend', onTouchEnd, { passive: true });
+  window.addEventListener('touchcancel', onTouchEnd, { passive: true });
 }
 
 /* --------------------------------------------------------------------------
-   3. ACORDEÃO INTERATIVO DE PERGUNTAS FREQUENTES (FAQ)
-   -------------------------------------------------------------------------- */
-function initFaqAccordion() {
-  const faqQuestions = document.querySelectorAll('.faq-question');
-
-  faqQuestions.forEach((button) => {
-    button.addEventListener('click', () => {
-      const parentItem = button.closest('.faq-item');
-      const isActive = parentItem.classList.contains('active');
-
-      // Fecha todos os outros itens
-      document.querySelectorAll('.faq-item').forEach((item) => {
-        item.classList.remove('active');
-        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-
-      // Alterna o item clicado
-      if (!isActive) {
-        parentItem.classList.add('active');
-        button.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-}
-
-/* --------------------------------------------------------------------------
-   4. BARRA FIXA INFERIOR FLUTUANTE (STICKY BAR)
+   BARRA FIXA FLUTUANTE (STICKY BAR)
    -------------------------------------------------------------------------- */
 function initStickyBar() {
   const stickyBar = document.querySelector('.sticky-bar');
   const offerSection = document.getElementById('oferta');
   if (!stickyBar) return;
 
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    // Aparece após rolar 450px
-    if (scrollY > 450) {
-      // Esconde se o usuário já estiver olhando direto para a caixa de oferta
+  const onScroll = () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    // Surge após rolar 400px
+    if (scrollY > 400) {
       if (offerSection) {
         const rect = offerSection.getBoundingClientRect();
-        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= window.innerHeight * 0.25) {
           stickyBar.classList.remove('visible');
           return;
         }
@@ -2179,63 +2748,20 @@ function initStickyBar() {
     } else {
       stickyBar.classList.remove('visible');
     }
-  }, { passive: true });
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 
 /* --------------------------------------------------------------------------
-   5. POPUP DE PROVA SOCIAL AO VIVO (VENDAS EM TEMPO REAL)
-   -------------------------------------------------------------------------- */
-function initLiveSalesNotification() {
-  const toast = document.querySelector('.live-toast');
-  if (!toast) return;
-
-  const buyers = [
-    { name: 'Maria C.', city: 'São Paulo - SP', initial: 'M' },
-    { name: 'Roberto S.', city: 'Belo Horizonte - MG', initial: 'R' },
-    { name: 'Cláudia F.', city: 'Curitiba - PR', initial: 'C' },
-    { name: 'Antônio L.', city: 'Porto Alegre - RS', initial: 'A' },
-    { name: 'Sandra M.', city: 'Goiânia - GO', initial: 'S' },
-    { name: 'José V.', city: 'Campinas - SP', initial: 'J' },
-    { name: 'Helena P.', city: 'Brasília - DF', initial: 'H' },
-    { name: 'Carlos D.', city: 'Salvador - BA', initial: 'C' }
-  ];
-
-  const toastName = toast.querySelector('.toast-name');
-  const toastCity = toast.querySelector('.toast-city');
-  const toastAvatar = toast.querySelector('.toast-avatar');
-
-  let buyerIndex = 0;
-
-  function showNextNotification() {
-    const buyer = buyers[buyerIndex];
-    toastName.textContent = buyer.name;
-    toastCity.textContent = buyer.city;
-    toastAvatar.textContent = buyer.initial;
-
-    toast.classList.add('show');
-
-    setTimeout(() => {
-      toast.classList.remove('show');
-    }, 4500);
-
-    buyerIndex = (buyerIndex + 1) % buyers.length;
-    // Próximo disparo entre 14 e 22 segundos
-    const nextInterval = Math.floor(Math.random() * 8000) + 14000;
-    setTimeout(showNextNotification, nextInterval);
-  }
-
-  // Primeiro disparo após 6 segundos
-  setTimeout(showNextNotification, 6000);
-}
-
-/* --------------------------------------------------------------------------
-   6. ROLAGEM SUAVE PARA OFERTA
+   ROLAGEM SUAVE
    -------------------------------------------------------------------------- */
 function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       const targetId = this.getAttribute('href');
-      if (targetId === '#' || targetId === '') return;
+      if (targetId === '#' || targetId === '#checkout' || targetId === '') return;
 
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
@@ -2249,6 +2775,126 @@ function initSmoothScroll() {
   });
 }
 
+/* --------------------------------------------------------------------------
+   CARROSSEL DE PRINTS DE CONVERSAS (WHATSAPP)
+   -------------------------------------------------------------------------- */
+function initPrintsCarousel() {
+  document.querySelectorAll('.carousel').forEach((car) => {
+    const track = car.querySelector('.car-track');
+    if (!track) return;
+    const slides = [...track.children];
+    if (!slides.length) return;
+    const prev = car.querySelector('.car-prev');
+    const next = car.querySelector('.car-next');
+    const count = car.querySelector('.car-count');
+
+    const getStep = () => slides[0].offsetWidth + 20;
+
+    if (prev) {
+      prev.addEventListener('click', () => {
+        track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+      });
+    }
+    if (next) {
+      next.addEventListener('click', () => {
+        track.scrollBy({ left: getStep(), behavior: 'smooth' });
+      });
+    }
+
+    const update = () => {
+      const step = getStep();
+      const i = Math.min(slides.length - 1, Math.max(0, Math.round(track.scrollLeft / step)));
+      if (count) count.textContent = `${i + 1} de ${slides.length}`;
+      if (prev) prev.disabled = track.scrollLeft < 8;
+      if (next) next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 8;
+    };
+
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+
+    // Autoplay opcional
+    const delay = Number(car.dataset.autoplay) || 0;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (delay && !reduceMotion) {
+      let paused = false;
+      let visible = false;
+      const tick = () => {
+        if (paused || !visible || document.hidden) return;
+        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 10;
+        if (atEnd) {
+          track.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          track.scrollBy({ left: getStep(), behavior: 'smooth' });
+        }
+      };
+      setInterval(tick, delay);
+      const pause = () => { paused = true; };
+      const resume = () => { paused = false; };
+      car.addEventListener('mouseenter', pause);
+      car.addEventListener('mouseleave', resume);
+      car.addEventListener('touchstart', pause, { passive: true });
+      car.addEventListener('touchend', () => setTimeout(resume, 4000), { passive: true });
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: 0.3 }).observe(car);
+      } else {
+        visible = true;
+      }
+    }
+  });
+}
+
+/* --------------------------------------------------------------------------
+   LIGHTBOX PARA AMPLIAR PRINTS DE CONVERSAS
+   -------------------------------------------------------------------------- */
+function initLightbox() {
+  const box = document.createElement('dialog');
+  box.className = 'lightbox';
+  box.innerHTML = `
+    <div class="lb-card">
+      <button type="button" class="lb-close" aria-label="Fechar conversa">&times;</button>
+      <img class="lb-img" alt="" src="" />
+    </div>
+  `;
+  document.body.appendChild(box);
+
+  const lbImg = box.querySelector('.lb-img');
+  const lbClose = box.querySelector('.lb-close');
+
+  const openLb = (src, alt) => {
+    if (!src) return;
+    lbImg.src = src;
+    lbImg.alt = alt || 'Conversa ampliada';
+    box.showModal();
+    document.documentElement.style.overflow = 'hidden';
+  };
+
+  const closeLb = () => {
+    box.close();
+    document.documentElement.style.overflow = '';
+  };
+
+  lbClose.addEventListener('click', closeLb);
+  box.addEventListener('close', () => {
+    document.documentElement.style.overflow = '';
+  });
+  box.addEventListener('click', (e) => {
+    if (e.target !== lbImg) closeLb();
+  });
+
+  // Gatilhos: clique no botão 'Ampliar conversa' ou na própria imagem do print
+  document.querySelectorAll('a.s181, img.s175').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = el.closest('.s174');
+      const img = card ? card.querySelector('.s175') : el;
+      const src = el.tagName === 'A' ? el.getAttribute('href') : el.getAttribute('src');
+      openLb(src || img?.src, img?.alt);
+    });
+  });
+}
+
 </script>
 </body>
+
 </html>
