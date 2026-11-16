@@ -1,0 +1,1780 @@
+/* ==========================================================================
+   MANUAL DO FÍGADO MAGRO — PÁGINA DE VENDAS OFICIAL
+   Design System inspirado em layout editorial de alta conversão
+   Tipografia: Playfair Display + Inter | Paleta: Deep Forest + Wellness Cream
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0C1812;
+  color: #16261E;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  padding-bottom: 76px; /* Espaço para a barra fixa mobile */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #10B981;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #34D399;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   BARRA SUPERIOR DE URGÊNCIA
+   -------------------------------------------------------------------------- */
+.top-bar {
+  background: #07100B;
+  border-bottom: 1px solid #1C3328;
+  padding: 9px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #D1E5DC;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.top-bar-badge {
+  background: #D4AF37;
+  color: #07100B;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 1: HERO SECTION (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s2 {
+  background: #0C1812;
+  color: #F0F7F4;
+  padding: 64px 20px 84px;
+}
+
+.s3 {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+}
+
+.s4 {
+  flex: 1 1 440px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.s5 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(32px, 4.8vw, 54px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.s6 {
+  color: #10B981;
+  font-style: italic;
+}
+
+.s7 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #B4CCC0;
+  max-width: 580px;
+}
+
+.hero-mock {
+  flex: 1 1 340px;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  display: block;
+  width: min(340px, 100%);
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.s8 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.s9 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #0D6E44;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 19px 34px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(13, 110, 68, 0.45);
+  transition: all 0.25s ease;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.s9:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(13, 110, 68, 0.6);
+}
+
+.s10 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #A3BFB2;
+}
+
+.s11 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 2: RESULTADOS REAIS & PROVA SOCIAL (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.s81 {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  color: #16261E;
+}
+
+.s90 {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.s91 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #122119;
+  text-align: center;
+}
+
+.s91-sub {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #5B7366;
+  text-align: center;
+  font-weight: 400;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(12, 24, 18, 0.09);
+}
+
+.result-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #E8F5EE;
+}
+
+.result-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.result-photo-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(6, 78, 59, 0.88);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.result-stars {
+  color: #F59E0B;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.result-text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #2D4237;
+  font-style: italic;
+  flex: 1;
+}
+
+.result-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #EBF2EE;
+  padding-top: 12px;
+}
+
+.result-info h5 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #122119;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 3: APRESENTANDO O MANUAL (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s48 {
+  padding: 84px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
+}
+
+.pres {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.pres-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 680px;
+}
+
+.s78 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #10B981;
+}
+
+.s79 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.2;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.pres-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.pres-card {
+  margin: 0;
+  background: #13251D;
+  border: 1px solid #233F31;
+  border-radius: 24px;
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pres-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+
+.pres-img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.pres-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pres-pill {
+  font-size: 13px;
+  font-weight: 700;
+  color: #F0F7F4;
+  background: #173024;
+  border: 1px solid #284C3A;
+  border-radius: 10px;
+  padding: 6px 14px;
+}
+
+.pres-title {
+  margin: 6px 0 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.2vw, 34px);
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.pres-sub {
+  margin: 0;
+  font-size: 16px;
+  color: #B4CCC0;
+  line-height: 1.55;
+}
+
+.pres-list {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pres-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #F0F7F4;
+}
+
+.pres-list li::before {
+  content: "";
+  flex: 0 0 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #10B981;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 4: DENTRO DO MANUAL — OS 5 GUIAS PRÁTICOS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.learn {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.learn-img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(12, 24, 18, 0.12);
+}
+
+.learn-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.learn-eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0D6E44;
+}
+
+.learn-h {
+  margin: 0 0 12px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  line-height: 1.15;
+  color: #122119;
+}
+
+.learn-intro {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #DCE7E1;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #5B7366;
+}
+
+.learn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.learn-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid #DCE7E1;
+}
+
+.learn-pill {
+  justify-self: start;
+  font-size: 12px;
+  font-weight: 700;
+  color: #064E3B;
+  background: #E8F5EE;
+  border-radius: 8px;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.learn-title {
+  margin: 0 0 4px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.25;
+  color: #122119;
+}
+
+.learn-desc {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #5B7366;
+}
+
+.learn-foot {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   VITRINE DOS 5 PRODUTOS COM CAPAS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.bundle-showcase-section {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  border-top: 1px solid #DCE7E1;
+  border-bottom: 1px solid #DCE7E1;
+}
+
+.bundle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.bundle-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.bundle-card:hover {
+  transform: translateY(-4px);
+  border-color: #10B981;
+  box-shadow: 0 16px 40px rgba(13, 110, 68, 0.1);
+}
+
+.bundle-card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: #E8F5EE;
+  color: #064E3B;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  margin-bottom: 14px;
+}
+
+.bundle-card-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.bundle-card-img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.bundle-card:hover .bundle-card-img {
+  transform: scale(1.03);
+}
+
+.bundle-card-title {
+  margin: 0 0 6px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #122119;
+  line-height: 1.25;
+}
+
+.bundle-card-desc {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #5B7366;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.bundle-card-highlights {
+  list-style: none;
+  border-top: 1px solid #EBF2EE;
+  padding-top: 12px;
+  margin: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bundle-card-highlights li {
+  font-size: 13px;
+  color: #2D4237;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.35;
+}
+
+.bundle-card-highlights li svg {
+  color: #10B981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   SLIDER INTERATIVO ANTES & DEPOIS (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.compare-section {
+  padding: 80px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 20px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #233F31;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  background: #000;
+  height: clamp(280px, 48vw, 360px);
+  touch-action: none;
+}
+
+.slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  text-align: center;
+}
+
+.slider-img.before {
+  background: linear-gradient(135deg, #2A1510 0%, #150906 100%);
+  color: #FFB4A2;
+}
+
+.slider-img.after {
+  background: linear-gradient(135deg, #093822 0%, #03170E 100%);
+  color: #A7F3D0;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.slider-svg {
+  width: clamp(120px, 24vw, 170px);
+  height: auto;
+  max-height: clamp(80px, 16vw, 115px);
+  display: block;
+}
+
+.slider-img h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(17px, 2.8vw, 21px);
+  font-weight: 700;
+  margin: 10px 0 4px;
+}
+
+.slider-img p {
+  font-size: clamp(12px, 2vw, 14px);
+  max-width: 320px;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.slider-tag {
+  position: absolute;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 5;
+}
+
+.slider-tag.before-tag {
+  left: 12px;
+  background: rgba(220, 38, 38, 0.9);
+  color: #FFFFFF;
+}
+
+.slider-tag.after-tag {
+  right: 12px;
+  background: rgba(16, 185, 129, 0.92);
+  color: #FFFFFF;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #D4AF37;
+  cursor: ew-resize;
+  z-index: 20;
+  box-shadow: 0 0 12px #D4AF37;
+}
+
+.slider-handle-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #D4AF37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #07100B;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.8);
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 6: BÔNUS EXCLUSIVOS (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.bonuses-section {
+  padding: 80px 20px;
+  background: #F6F9F7;
+  border-top: 1px solid #DCE7E1;
+}
+
+.bonuses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.bonus-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 20px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(12, 24, 18, 0.05);
+}
+
+.bonus-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #064E3B;
+  background: #E8F5EE;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  margin-bottom: 12px;
+}
+
+.bonus-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0 16px;
+  width: 100%;
+}
+
+.bonus-img {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s ease;
+}
+
+.bonus-card:hover .bonus-img {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.bonus-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #E8F5EE;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.bonus-card h4 {
+  margin: 0 0 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #122119;
+  line-height: 1.25;
+}
+
+.bonus-card p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #5B7366;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.bonus-price {
+  font-size: 14px;
+  color: #71887C;
+  font-weight: 600;
+}
+
+.bonus-price .strike {
+  text-decoration: line-through;
+  margin-right: 6px;
+}
+
+.bonus-price .free {
+  color: #0D6E44;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 8: COMO VOCÊ RECEBE (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.s186 {
+  padding: 84px 20px;
+  background: #0C1812;
+  color: #F0F7F4;
+}
+
+.s187 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.s188 {
+  background: #13251D;
+  border: 1px solid #233F31;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.s188 svg {
+  color: #10B981;
+}
+
+.s189 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.s88 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #B4CCC0;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 9: CALLOUT INTERMEDIÁRIO (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.callout-section {
+  padding: 70px 20px;
+  background: #F6F9F7;
+  text-align: center;
+  border-top: 1px solid #DCE7E1;
+  border-bottom: 1px solid #DCE7E1;
+}
+
+.callout-box {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.callout-h {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.2;
+  color: #122119;
+}
+
+.callout-desc {
+  margin: 0;
+  font-size: 16px;
+  color: #5B7366;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 11: A CAIXA DE OFERTA PRINCIPAL (IDENTIDADE ESPOSA DESEJADA)
+   -------------------------------------------------------------------------- */
+.s213 {
+  max-width: 580px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 38px 28px;
+  box-shadow: 0 20px 60px rgba(12, 24, 18, 0.12);
+  border: 2px solid #0D6E44;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #16261E;
+}
+
+.s214 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(24px, 3.4vw, 32px);
+  line-height: 1.2;
+  color: #122119;
+}
+
+.offer-img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+.s246 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 6px;
+}
+
+.s247 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #EBF2EE;
+  font-size: 14.5px;
+  color: #2D4237;
+}
+
+.s248 {
+  color: #5B7366;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.s249 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #122119;
+}
+
+.s250 {
+  text-decoration: line-through;
+  color: #71887C;
+  white-space: nowrap;
+}
+
+.s251 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.s252 {
+  font-size: 15px;
+  color: #5B7366;
+}
+
+.s253 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(44px, 8vw, 54px);
+  font-weight: 800;
+  color: #0D6E44;
+  line-height: 1.1;
+}
+
+.s254 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #16261E;
+}
+
+.s255 {
+  display: block;
+  text-align: center;
+  background: #0D6E44;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(13, 110, 68, 0.35);
+  transition: all 0.25s ease;
+}
+
+.s255:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 38px rgba(13, 110, 68, 0.5);
+}
+
+.s256 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 12: GARANTIA BLINDADA (LIGHT CREAM)
+   -------------------------------------------------------------------------- */
+.guarantee-wrap {
+  max-width: 580px;
+  margin: 24px auto 0;
+  background: #E8F5EE;
+  border: 1px solid #B8E0CC;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.guarantee-badge {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0D6E44;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.guarantee-badge small {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.guarantee-text h4 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #064E3B;
+}
+
+.guarantee-text p {
+  margin: 0;
+  font-size: 13.5px;
+  color: #2D4237;
+  line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   SEÇÃO 13: PERGUNTAS FREQUENTES (FAQ ACCORDION ESTILO ESPOSA DESEJADA)
+   -------------------------------------------------------------------------- */
+.s289 {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.s290 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.s291 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 36px);
+  color: #122119;
+}
+
+.s293 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid #DCE7E1;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: #10B981;
+}
+
+.faq-q {
+  width: 100%;
+  padding: 18px 22px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #122119;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid #C4DAD0;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  transition: transform 0.25s, background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.faq-q[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+  background: #0D6E44;
+  color: #FFFFFF;
+  border-color: #0D6E44;
+}
+
+.faq-a {
+  padding: 0 22px 18px;
+}
+
+.faq-a p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5B7366;
+}
+
+/* --------------------------------------------------------------------------
+   RODAPÉ (DARK FOREST)
+   -------------------------------------------------------------------------- */
+.footer {
+  background: #07100B;
+  color: #71887C;
+  padding: 48px 20px 88px;
+  text-align: center;
+  border-top: 1px solid #1C3328;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  font-size: 13.5px;
+  color: #8CA397;
+  line-height: 1.55;
+}
+
+.footer-disclaimer {
+  max-width: 740px;
+  margin: 16px auto;
+  font-size: 12px;
+  color: #556B60;
+  line-height: 1.6;
+}
+
+.footer-copy {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #556B60;
+}
+
+/* --------------------------------------------------------------------------
+   BARRA FIXA MOBILE FLUTUANTE (STICKY BAR)
+   -------------------------------------------------------------------------- */
+.sticky-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(12, 24, 18, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid #233F31;
+  padding: 10px 20px;
+  padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  z-index: 999;
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
+  transform: translateY(110%);
+  transition: transform 0.35s ease-in-out;
+}
+
+.sticky-bar.visible {
+  transform: translateY(0);
+}
+
+.sticky-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sticky-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sticky-price {
+  font-size: 17px;
+  font-weight: 900;
+  color: #10B981;
+}
+
+.sticky-btn {
+  background: #0D6E44;
+  color: #FFFFFF;
+  font-size: 13.5px;
+  font-weight: 800;
+  padding: 11px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 15px rgba(13, 110, 68, 0.4);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sticky-btn:hover {
+  background: #0F7F4F;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVIDADE (MEDIA QUERIES)
+   -------------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .learn {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .learn-img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 760px) {
+  .s2 {
+    padding: 48px 16px 64px;
+  }
+  .s3 {
+    gap: 36px;
+  }
+  .pres-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .pres-card {
+    padding: 20px 16px 24px;
+  }
+  .s9 {
+    padding: 18px 24px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .s213 {
+    padding: 30px 18px;
+  }
+  .guarantee-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .learn-row {
+    grid-template-columns: 92px 1fr;
+    gap: 12px;
+  }
+  .s10 {
+    gap: 10px;
+  }
+  .s253 {
+    font-size: 42px;
+  }
+}
+
+/* ==========================================================================
+   SEÇÃO DE PROVAS SOCIAIS EM PRINTS DE CONVERSAS (WHATSAPP)
+   ========================================================================== */
+.prints-section {
+  padding: 80px 20px;
+  background: #F4FAF6;
+  border-top: 1px solid #E1EFE8;
+  border-bottom: 1px solid #E1EFE8;
+}
+
+.s170 {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #D1E5DC;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(13, 110, 68, 0.06);
+}
+
+.s171 {
+  padding: 44px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.s172 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0D6E44;
+  text-align: center;
+}
+
+.s173 {
+  margin: 0 0 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(26px, 3.8vw, 38px);
+  line-height: 1.15;
+  color: #122119;
+  text-align: center;
+  font-weight: 800;
+}
+
+.prints-sub {
+  margin: 0 auto;
+  max-width: 620px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #5B7366;
+  text-align: center;
+}
+
+/* Carrossel de Prints */
+.car2 {
+  max-width: 480px;
+  width: 100%;
+  margin: 12px auto 0;
+  position: relative;
+}
+
+.car2 .car-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.car2 .car-hint {
+  font-size: 13px;
+  color: #5B7366;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.car2 .car-hint::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.car2 .car-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #5B7366;
+  white-space: nowrap;
+}
+
+.car2 .car-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #F0F7F4;
+  border: 1px solid #D1E5DC;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.car2 .car-btn:hover:not(:disabled) {
+  background: #0D6E44;
+  color: #FFFFFF;
+  border-color: #0D6E44;
+}
+
+.car2 .car-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.car2 .car-track {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  gap: 20px;
+  padding: 4px 2px 14px;
+}
+
+.car2 .car-track::-webkit-scrollbar {
+  display: none;
+}
+
+.car2 .s174 {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: #FFFFFF;
+  border: 1px solid #D1E5DC;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(13, 110, 68, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car2 .s174:hover {
+  box-shadow: 0 12px 32px rgba(13, 110, 68, 0.12);
+}
+
+.car2 .s175 {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 420 / 590;
+  object-fit: cover;
+  background: #ECE5DD;
+  display: block;
+  border-bottom: 1px solid #D1E5DC;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.car2 .s175:hover {
+  filter: brightness(0.98);
+}
+
+.car2 .s176 {
+  margin: 0;
+  padding: 18px 20px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #122119;
+  background: #FAFDFB;
+  flex: 1;
+}
+
+.s177 {
+  border-top: 1px solid #EBF5F0;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #FFFFFF;
+}
+
+.s178 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.s179 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #122119;
+}
+
+.s180 {
+  font-size: 12px;
+  color: #71887C;
+}
+
+.s181 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0D6E44;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background: #EBF5F0;
+  transition: all 0.2s ease;
+}
+
+.s181:hover {
+  background: #0D6E44;
+  color: #FFFFFF;
+}
+
+/* Barra inferior de conversão do Card */
+.s182 {
+  background: #FAFDFB;
+  border-top: 1px solid #D1E5DC;
+  padding: 22px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.s183 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #064E3B;
+  background: #EBF5F0;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #D1E5DC;
+}
+
+.s184 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: linear-gradient(135deg, #10B981, #0D6E44);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 10px 10px 26px;
+  border-radius: 999px;
+  min-width: 290px;
+  box-shadow: 0 4px 16px rgba(13, 110, 68, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.s184:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(13, 110, 68, 0.35);
+}
+
+.s185 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #0D6E44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+.lightbox::backdrop {
+  background: rgba(7, 24, 18, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+.lb-card {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 16px 30px;
+  box-sizing: border-box;
+}
+
+.lb-img {
+  display: block;
+  width: auto;
+  max-width: min(480px, 94vw);
+  max-height: calc(100vh - 100px);
+  border-radius: 18px;
+  background: #ECE5DD;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.lb-close {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 0;
+  background: #FFFFFF;
+  color: #122119;
+  font-size: 30px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lb-close:hover {
+  transform: scale(1.08);
+  background: #F4FAF6;
+}
+
+@media (max-width: 760px) {
+  .prints-section {
+    padding: 56px 16px;
+  }
+  .s171 {
+    padding: 32px 18px 24px;
+  }
+  .s182 {
+    padding: 18px;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  .s184 {
+    min-width: unset;
+    width: 100%;
+  }
+}
