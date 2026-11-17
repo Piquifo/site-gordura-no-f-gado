@@ -1,0 +1,67 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 590" width="100%" height="100%" style="background:#ECE5DD;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="av3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <filter id="shadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <!-- Top Bar WhatsApp -->
+  <rect x="0" y="0" width="420" height="74" fill="#075E54"/>
+  
+  <path d="M16 38 L26 28 M16 38 L26 48 M16 38 L34 38" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <circle cx="56" cy="38" r="20" fill="url(#av3)"/>
+  <text x="56" y="44" fill="#FFFFFF" font-size="16" font-weight="700" text-anchor="middle">DN</text>
+  
+  <text x="88" y="34" fill="#FFFFFF" font-size="16" font-weight="600">Dona Neide Silveira</text>
+  <text x="88" y="50" fill="#A7F3D0" font-size="12">online</text>
+  
+  <g fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="300" y="28" width="18" height="14" rx="3"/>
+    <path d="M318 33 L326 29 L326 41 Z"/>
+    <path d="M346 31 C346 37 351 42 357 42 C359 42 360 41 361 40 L359 36 L356 37 C354 35 353 34 351 32 L352 29 L348 27 C347 28 346 29 346 31 Z"/>
+    <circle cx="388" cy="31" r="1.5" fill="#FFFFFF"/>
+    <circle cx="388" cy="38" r="1.5" fill="#FFFFFF"/>
+    <circle cx="388" cy="45" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Date Chip -->
+  <rect x="175" y="90" width="70" height="24" rx="12" fill="#E1F3FB" filter="url(#shadow3)"/>
+  <text x="210" y="106" fill="#54656F" font-size="11" font-weight="600" text-anchor="middle">Hoje</text>
+
+  <!-- Message 1 (Incoming) -->
+  <rect x="25" y="128" width="345" height="114" rx="10" fill="#FFFFFF" filter="url(#shadow3)"/>
+  <text x="38" y="150" fill="#111B21" font-size="13.5">Menina do céu, não sei nem como te</text>
+  <text x="38" y="170" fill="#111B21" font-size="13.5">agradecer! Eu tenho 58 anos e vivia</text>
+  <text x="38" y="190" fill="#111B21" font-size="13.5">com aquela barriga dura e dolorida,</text>
+  <text x="38" y="210" fill="#0D6E44" font-size="13.5" font-weight="700">parecia que eu tava sempre cheia de gases.</text>
+  <text x="334" y="234" fill="#667781" font-size="10.5">16:40</text>
+
+  <!-- Message 2 (Incoming) -->
+  <rect x="25" y="252" width="345" height="94" rx="10" fill="#FFFFFF" filter="url(#shadow3)"/>
+  <text x="38" y="274" fill="#111B21" font-size="13.5">Com 3 semanas seguindo o cardápio</text>
+  <text x="38" y="294" fill="#111B21" font-size="13.5">do Manual minha digestão mudou 100%.</text>
+  <text x="38" y="316" fill="#111B21" font-size="13.5">Desinchei tanto que até minhas calças</text>
+  <text x="38" y="334" fill="#111B21" font-size="13.5">antigas estão voltando a fechar! 🥰</text>
+  <text x="334" y="338" fill="#667781" font-size="10.5">16:41</text>
+
+  <!-- Message 3 (Outgoing) -->
+  <rect x="110" y="360" width="285" height="74" rx="10" fill="#D9FDD3" filter="url(#shadow3)"/>
+  <text x="122" y="382" fill="#111B21" font-size="13.5">Dona Neide, que bênção ler isso! ❤️</text>
+  <text x="122" y="402" fill="#111B21" font-size="13.5">Desinflamar o fígado devolve a leveza</text>
+  <text x="122" y="422" fill="#111B21" font-size="13.5">no corpo inteiro. A senhora merece!</text>
+  <text x="352" y="428" fill="#667781" font-size="10.5">16:44</text>
+  <path d="M375 422 L378 426 L386 417 M379 422 L382 426 L390 417" stroke="#53BDEB" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Message 4 (Incoming) -->
+  <rect x="25" y="446" width="345" height="92" rx="10" fill="#FFFFFF" filter="url(#shadow3)"/>
+  <text x="38" y="468" fill="#111B21" font-size="13.5">Já recomendei pras minhas amigas da</text>
+  <text x="38" y="488" fill="#111B21" font-size="13.5">igreja e pra minha comadre. Todo mundo</text>
+  <text x="38" y="508" fill="#111B21" font-size="13.5">precisa desse manual, é muito fácil de ler!</text>
+  <text x="38" y="528" fill="#111B21" font-size="13.5">Parabéns pelo trabalho abençoado! 🙏</text>
+  <text x="334" y="530" fill="#667781" font-size="10.5">16:46</text>
+</svg>
